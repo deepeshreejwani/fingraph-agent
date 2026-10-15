@@ -1,0 +1,65 @@
+[project]
+name = "fingraph-agent"
+version = "0.1.0"
+description = "Production-oriented agentic financial intelligence system over SEC filings."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "fastapi>=0.116,<1.0",
+    "groq>=1.7.0",
+    "httpx>=0.28.1",
+    "langfuse>=4.7.0,<5.0",
+    "langgraph>=1.2.12",
+    "lxml>=6.1.3",
+    "neo4j>=6.3.1",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "qdrant-client[fastembed]>=1.19.1",
+    "uvicorn[standard]>=0.35,<1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "locust>=2.42,<3.0",
+    "mypy>=1.0",
+    "pytest>=8.0",
+    "ruff>=0.8",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fingraph"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+    "SIM",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src"]
+plugins = ["pydantic.mypy"]

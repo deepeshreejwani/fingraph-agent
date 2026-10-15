@@ -1,0 +1,2403 @@
+{
+  "summary": {
+    "total": 80,
+    "passed": 80,
+    "failed": 0,
+    "accuracy": 1.0,
+    "failure_counts": {}
+  },
+  "results": [
+    {
+      "id": "aapl_operating_income_2025",
+      "question": "What was Apple operating income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [
+        "AAPL"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 39.273,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_operating_income_2025",
+      "question": "What was Amazon operating income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AMZN"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 6.82,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_operating_income_2025",
+      "question": "What was Alphabet operating income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "GOOGL"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 7.064,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_operating_income_2025",
+      "question": "What was Meta operating income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [
+        "META"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 5.954,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_operating_income_2025",
+      "question": "What was Microsoft operating income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "MSFT"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 6.215,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "nvda_operating_income_2025",
+      "question": "What was NVIDIA operating income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "NVDA"
+      ],
+      "graph_tickers": [
+        "NVDA"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 6.652,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "aapl_total_assets_2025",
+      "question": "What were Apple's total assets in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [
+        "AAPL"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 6.054,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_total_assets_2025",
+      "question": "What were Amazon's total assets in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AMZN"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 5.649,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_total_assets_2025",
+      "question": "What were Alphabet's total assets in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "GOOGL"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 7.471,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_total_assets_2025",
+      "question": "What were Meta's total assets in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [
+        "META"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 9.211,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_total_assets_2025",
+      "question": "What were Microsoft's total assets in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "MSFT"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 8.473,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "nvda_total_assets_2025",
+      "question": "What were NVIDIA's total assets in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "NVDA"
+      ],
+      "graph_tickers": [
+        "NVDA"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 9.911,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_total_liabilities_2025",
+      "question": "What were Amazon's total liabilities in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 15.021,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_total_liabilities_2025",
+      "question": "What were Alphabet's total liabilities in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "GOOGL"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 9.31,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_total_liabilities_2025",
+      "question": "What were Meta's total liabilities in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [
+        "META"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 11.517,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_total_liabilities_2025",
+      "question": "What were Microsoft's total liabilities in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "MSFT"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 7.86,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "aapl_cash_2025",
+      "question": "What was Apple's cash and cash equivalents balance in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [
+        "AAPL"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 10.494,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_cash_2025",
+      "question": "What was Amazon's cash and cash equivalents balance in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AMZN"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 9.014,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_cash_2025",
+      "question": "What was Microsoft's cash and cash equivalents balance in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "MSFT"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 6.991,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "nvda_cash_2025",
+      "question": "What was NVIDIA's cash and cash equivalents balance in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "NVDA"
+      ],
+      "graph_tickers": [
+        "NVDA"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 0,
+      "latency_ms": 7.574,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "aapl_latest_market_risk",
+      "question": "What market risks does Apple describe?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AAPL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 1,
+      "latency_ms": 163.244,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_latest_market_risk",
+      "question": "What market risks does Amazon describe?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 3,
+      "latency_ms": 22.788,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_latest_market_risk",
+      "question": "What market risks does Alphabet describe?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 3,
+      "latency_ms": 18.254,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_latest_market_risk",
+      "question": "What market risks does Meta describe?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 2,
+      "latency_ms": 26.682,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "aapl_latest_mda",
+      "question": "Summarize Apple's latest MD&A discussion.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AAPL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 12.663,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_latest_mda",
+      "question": "Summarize Amazon's latest MD&A discussion.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 12.652,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_latest_mda",
+      "question": "Summarize Alphabet's latest MD&A discussion.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 13.31,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_latest_mda",
+      "question": "Summarize Meta's latest MD&A discussion.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 52.392,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_latest_mda",
+      "question": "Summarize Microsoft's latest MD&A discussion.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "MSFT"
+      ],
+      "represented_years": [
+        2026
+      ],
+      "expected_years": [
+        2026
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 27.53,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "nvda_latest_mda",
+      "question": "Summarize NVIDIA's latest MD&A discussion.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "NVDA"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "NVDA"
+      ],
+      "represented_years": [
+        2026
+      ],
+      "expected_years": [
+        2026
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 20.668,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_business_longitudinal",
+      "question": "How has Amazon's business evolved over the years?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2018,
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "expected_years": [
+        2018,
+        2025
+      ],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 12.92,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_business_longitudinal",
+      "question": "How has Alphabet's business evolved over the years?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2018,
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "expected_years": [
+        2018,
+        2025
+      ],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 19.436,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_risks_longitudinal",
+      "question": "How have Meta's risks changed over the years?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2018,
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "expected_years": [
+        2018,
+        2025
+      ],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 24.394,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_risks_longitudinal",
+      "question": "How have Microsoft's risks changed over the years?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "MSFT"
+      ],
+      "represented_years": [
+        2019,
+        2021,
+        2023,
+        2024,
+        2026
+      ],
+      "expected_years": [
+        2019,
+        2026
+      ],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 24.153,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "aapl_revenue_2025_context",
+      "question": "What was Apple revenue in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [
+        "AAPL"
+      ],
+      "vector_tickers": [
+        "AAPL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 27.479,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_revenue_2025_context",
+      "question": "What was Amazon revenue in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AMZN"
+      ],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 22.217,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_revenue_2025_context",
+      "question": "What was Alphabet revenue in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "GOOGL"
+      ],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 23.536,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_revenue_2025_context",
+      "question": "What was Meta revenue in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [
+        "META"
+      ],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 20.906,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_operating_income_2025_context",
+      "question": "What was Microsoft operating income in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "MSFT"
+      ],
+      "vector_tickers": [
+        "MSFT"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 21.163,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_operating_income_2025_context",
+      "question": "What was Amazon operating income in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AMZN"
+      ],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 22.465,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_operating_income_2025_context",
+      "question": "What was Alphabet operating income in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "GOOGL"
+      ],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 33.776,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_operating_income_2025_context",
+      "question": "What was Meta operating income in 2025 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [
+        "META"
+      ],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 1,
+      "vector_evidence_count": 5,
+      "latency_ms": 33.963,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "aapl_revenue_drivers_2024_2025",
+      "question": "How did Apple's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [
+        "AAPL"
+      ],
+      "vector_tickers": [
+        "AAPL"
+      ],
+      "represented_years": [
+        2024,
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 26.468,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "amzn_revenue_drivers_2024_2025",
+      "question": "How did Amazon's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AMZN"
+      ],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2024,
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 23.308,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "googl_revenue_drivers_2024_2025",
+      "question": "How did Alphabet's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "GOOGL"
+      ],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2024,
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 50.911,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "meta_revenue_drivers_2024_2025",
+      "question": "How did Meta's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [
+        "META"
+      ],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2024,
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 32.008,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "nvda_revenue_drivers_2024_2026",
+      "question": "How did NVIDIA's revenue change from 2024 to 2026 and explain what management said drove the trend?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "NVDA"
+      ],
+      "graph_tickers": [
+        "NVDA"
+      ],
+      "vector_tickers": [
+        "NVDA"
+      ],
+      "represented_years": [
+        2024,
+        2025,
+        2026
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 3,
+      "vector_evidence_count": 5,
+      "latency_ms": 44.34,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "msft_net_income_drivers_2025_2026",
+      "question": "How did Microsoft's net income change from 2025 to 2026 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "MSFT"
+      ],
+      "vector_tickers": [
+        "MSFT"
+      ],
+      "represented_years": [
+        2025,
+        2026
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 53.475,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_graph_operating_income_msft_amzn_googl_2025",
+      "question": "Compare operating income for Microsoft, Amazon and Alphabet in 2025.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN",
+        "GOOGL",
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "AMZN",
+        "GOOGL",
+        "MSFT"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 3,
+      "vector_evidence_count": 0,
+      "latency_ms": 23.484,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_graph_revenue_aapl_amzn_2024",
+      "question": "Compare Apple and Amazon revenue in 2024.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AAPL",
+        "AMZN"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2024
+      ],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 0,
+      "latency_ms": 10.204,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_graph_assets_googl_meta_2025",
+      "question": "Compare total assets for Alphabet and Meta in 2025.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "graph_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 0,
+      "latency_ms": 2192.243,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_graph_net_income_msft_nvda_2025",
+      "question": "Compare Microsoft and NVIDIA net income in 2025.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT",
+        "NVDA"
+      ],
+      "graph_tickers": [
+        "MSFT",
+        "NVDA"
+      ],
+      "vector_tickers": [],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 0,
+      "latency_ms": 15.731,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_vector_ai_risks_msft_amzn_meta_googl",
+      "question": "Compare AI infrastructure risks reported by Microsoft, Amazon, Meta and Alphabet.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN",
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AMZN",
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "represented_years": [
+        2019,
+        2021,
+        2023,
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 53.064,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_vector_risks_aapl_amzn_2024",
+      "question": "Compare the risks Apple and Amazon described in their 2024 10-K filings.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AAPL",
+        "AMZN"
+      ],
+      "represented_years": [
+        2024
+      ],
+      "expected_years": [
+        2024
+      ],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 27.484,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_vector_business_aapl_amzn_googl_meta_2025",
+      "question": "Compare the businesses described by Apple, Amazon, Alphabet and Meta in their 2025 10-K filings.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 48.516,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_vector_market_risk_aapl_amzn_googl_meta_2025",
+      "question": "Compare market risks reported by Apple, Amazon, Alphabet and Meta in their 2025 10-K filings.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 5,
+      "latency_ms": 47.8,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_hybrid_revenue_msft_amzn_2025",
+      "question": "Compare Microsoft and Amazon revenue in 2025 and explain what management said drove performance.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "vector_tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 35.759,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multi_hybrid_operating_income_googl_meta_2025",
+      "question": "Compare operating income for Alphabet and Meta in 2025 and discuss what management said about performance.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "graph_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "vector_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [
+        2025
+      ],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 1923.403,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_aapl_amzn_revenue_2024_risks",
+      "question": "Between Apple and Amazon, which company had higher revenue in 2024, and how did that company describe its risks in its 2024 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "AMZN"
+      ],
+      "graph_tickers": [
+        "AAPL",
+        "AMZN"
+      ],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2024
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": [
+        "AMZN"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 32.031,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_msft_nvda_revenue_2025_business",
+      "question": "Between Microsoft and NVIDIA, which company had higher revenue in 2025, and how did that company describe its business in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT",
+        "NVDA"
+      ],
+      "graph_tickers": [
+        "MSFT",
+        "NVDA"
+      ],
+      "vector_tickers": [
+        "MSFT"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": [
+        "MSFT"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 26.244,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_googl_meta_revenue_2025_market_risk",
+      "question": "Between Alphabet and Meta, which company had higher revenue in 2025, and how did that company describe its market risks in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "graph_tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": [
+        "GOOGL"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 3,
+      "latency_ms": 21.746,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_aapl_meta_net_income_2025_risks",
+      "question": "Between Apple and Meta, which company had higher net income in 2025, and how did that company describe its risks in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "META"
+      ],
+      "graph_tickers": [
+        "AAPL",
+        "META"
+      ],
+      "vector_tickers": [
+        "AAPL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": [
+        "AAPL"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 22.649,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_amzn_googl_operating_income_2025_business",
+      "question": "Between Amazon and Alphabet, which company had higher operating income in 2025, and how did that company describe its business in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": [
+        "GOOGL"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 19.407,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_msft_amzn_assets_2025_risks",
+      "question": "Between Microsoft and Amazon, which company had higher total assets in 2025, and how did that company describe its risks in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "graph_tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "vector_tickers": [
+        "AMZN"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": [
+        "AMZN"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 21.687,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_aapl_googl_revenue_2025_lower_risks",
+      "question": "Between Apple and Alphabet, which company had lower revenue in 2025, and how did that company describe its risks in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "graph_tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "vector_tickers": [
+        "GOOGL"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": [
+        "GOOGL"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 22.386,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "multihop_meta_amzn_assets_2025_lower_business",
+      "question": "Between Meta and Amazon, which company had lower total assets in 2025, and how did that company describe its business in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": false,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN",
+        "META"
+      ],
+      "graph_tickers": [
+        "AMZN",
+        "META"
+      ],
+      "vector_tickers": [
+        "META"
+      ],
+      "represented_years": [
+        2025
+      ],
+      "expected_years": [],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": [
+        "META"
+      ],
+      "graph_row_count": 2,
+      "vector_evidence_count": 5,
+      "latency_ms": 23.131,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_netflix_revenue_2025",
+      "question": "What was Netflix revenue in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 9.613,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_tesla_net_income_2025",
+      "question": "What was Tesla net income in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 10.066,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_amd_business_2025",
+      "question": "Describe AMD's business in its 2025 10-K.",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": "Item 1. Business",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 12.144,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_salesforce_risks_2025",
+      "question": "What risks did Salesforce describe in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": "Item 1A. Risk Factors",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 11.356,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_amzn_revenue_2030",
+      "question": "What was Amazon revenue in 2030?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 10.599,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_googl_operating_income_2030",
+      "question": "What was Alphabet operating income in 2030?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 9.975,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_meta_assets_2030",
+      "question": "What were Meta's total assets in 2030?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 10.538,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_aapl_market_risk_2030",
+      "question": "What market risks did Apple describe in its 2030 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 15.903,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_googl_gross_profit_2025",
+      "question": "What was Alphabet gross profit in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "GOOGL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 0.693,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_meta_eps_2025",
+      "question": "What was Meta EPS in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "META"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 0.469,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_amzn_operating_cash_flow_2025",
+      "question": "What was Amazon operating cash flow in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AMZN"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 0.422,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_aapl_ebit_2025",
+      "question": "What was Apple EBIT in 2025?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "AAPL"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": null,
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 0.579,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_msft_revenue_2030_context",
+      "question": "What was Microsoft revenue in 2030 and explain what management said drove performance?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [
+        "MSFT"
+      ],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": "Item 7. MD&A",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 22.413,
+      "errors": [],
+      "error": null
+    },
+    {
+      "id": "unsupported_oracle_market_risk_2025",
+      "question": "What market risks did Oracle describe in its 2025 10-K?",
+      "status": "completed",
+      "passed": true,
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "expected_insufficient": true,
+      "failure_categories": [],
+      "requested_tickers": [],
+      "graph_tickers": [],
+      "vector_tickers": [],
+      "represented_years": [],
+      "expected_years": [],
+      "expected_section": "Item 7A. Market Risk",
+      "dependent_expected_tickers": null,
+      "graph_row_count": 0,
+      "vector_evidence_count": 0,
+      "latency_ms": 11.961,
+      "errors": [],
+      "error": null
+    }
+  ]
+}

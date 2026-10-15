@@ -1,0 +1,140 @@
+[
+  {
+    "id": "ret-001",
+    "question": "What supply chain and manufacturing concentration risks does NVIDIA describe?",
+    "filters": {
+      "tickers": ["NVDA"]
+    },
+    "relevance": {
+      "tickers": ["NVDA"],
+      "section_names": ["Item 1A. Risk Factors"]
+    }
+  },
+  {
+    "id": "ret-002",
+    "question": "How does NVIDIA describe dependency on third-party manufacturers and suppliers?",
+    "filters": {
+      "tickers": ["NVDA"]
+    },
+    "relevance": {
+      "tickers": ["NVDA"],
+      "section_names": ["Item 1A. Risk Factors"]
+    }
+  },
+  {
+    "id": "ret-003",
+    "question": "What foreign exchange and interest rate risks does Apple report?",
+    "filters": {
+      "tickers": ["AAPL"]
+    },
+    "relevance": {
+      "tickers": ["AAPL"],
+      "section_names": ["Item 7A. Market Risk"]
+    }
+  },
+  {
+    "id": "ret-004",
+    "question": "How does Amazon describe AWS customers and enterprise services?",
+    "filters": {
+      "tickers": ["AMZN"]
+    },
+    "relevance": {
+      "tickers": ["AMZN"],
+      "section_names": ["Item 1. Business"]
+    }
+  },
+  {
+    "id": "ret-005",
+    "question": "What competitive risks does Amazon associate with artificial intelligence?",
+    "filters": {
+      "tickers": ["AMZN"]
+    },
+    "relevance": {
+      "tickers": ["AMZN"],
+      "section_names": ["Item 1A. Risk Factors"]
+    }
+  },
+  {
+    "id": "ret-006",
+    "question": "How does Alphabet describe competition and investment in artificial intelligence?",
+    "filters": {
+      "tickers": ["GOOGL"]
+    },
+    "relevance": {
+      "tickers": ["GOOGL"],
+      "section_names": [
+        "Item 1. Business",
+        "Item 1A. Risk Factors"
+      ]
+    }
+  },
+  {
+    "id": "ret-007",
+    "question": "What risks does Meta describe around artificial intelligence infrastructure and competition?",
+    "filters": {
+      "tickers": ["META"]
+    },
+    "relevance": {
+      "tickers": ["META"],
+      "section_names": ["Item 1A. Risk Factors"]
+    }
+  },
+  {
+    "id": "ret-008",
+    "question": "How does Microsoft describe competition in artificial intelligence products and platforms?",
+    "filters": {
+      "tickers": ["MSFT"]
+    },
+    "relevance": {
+      "tickers": ["MSFT"],
+      "section_names": [
+        "Item 1. Business",
+        "Item 1A. Risk Factors"
+      ]
+    }
+  },
+  {
+    "id": "ret-009",
+    "question": "What market risks does Microsoft report?",
+    "filters": {
+      "tickers": ["MSFT"]
+    },
+    "relevance": {
+      "tickers": ["MSFT"],
+      "section_names": ["Item 7A. Market Risk"]
+    }
+  },
+  {
+    "id": "ret-010",
+    "question": "What does Apple say about its business products, services, and markets?",
+    "filters": {
+      "tickers": ["AAPL"]
+    },
+    "relevance": {
+      "tickers": ["AAPL"],
+      "section_names": ["Item 1. Business"]
+    }
+  },
+  {
+    "id": "ret-011",
+    "question": "How does Meta discuss business investment and operating expenses?",
+    "filters": {
+      "tickers": ["META"]
+    },
+    "relevance": {
+      "tickers": ["META"],
+      "section_names": ["Item 7. MD&A"]
+    }
+  },
+  {
+    "id": "ret-012",
+    "question": "How does Alphabet discuss financial condition and results of operations?",
+    "filters": {
+      "tickers": ["GOOGL"]
+    },
+    "relevance": {
+      "tickers": ["GOOGL"],
+      "section_names": ["Item 7. MD&A"]
+    }
+  }
+]

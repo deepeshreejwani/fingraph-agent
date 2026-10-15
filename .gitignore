@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Test / quality tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local data
+data/raw/
+data/processed/
+data/cache/
+data/state/
+
+# Generated evaluation / benchmark output
+evals/reports/*
+!evals/reports/agent_evidence_bootstrap_report.json
+!evals/reports/agent_routing_bootstrap_report.json
+!evals/reports/answer_golden_report.json
+!evals/reports/answer_new_cases_evidence_report.json
+!evals/reports/api_load_report.json
+!evals/reports/graph_qa_bootstrap_report.json
+!evals/reports/graph_repair_report.json
+!evals/reports/retrieval_bootstrap_report.json
+!evals/reports/retrieval_scale_v1_1_report.json
+/reports/
+
+# Vector database storage
+qdrant_storage/
+
+# Neo4j local volumes
+neo4j_data/
+neo4j_logs/
+neo4j_plugins/
+
+# Runtime files
+*.log
+*.pid
+*.ses
+tmp/
+# Private environment profiles
+.env.dev
+.env.prod
+!.env.example

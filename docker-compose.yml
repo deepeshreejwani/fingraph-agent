@@ -1,0 +1,104 @@
+services:
+  neo4j:
+    image: neo4j:2026.09.0
+    container_name: fingraph-neo4j
+
+    environment:
+      NEO4J_AUTH: "neo4j/${FINGRAPH_NEO4J_PASSWORD}"
+      FINGRAPH_NEO4J_PASSWORD: "${FINGRAPH_NEO4J_PASSWORD}"
+
+    ports:
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+
+    volumes:
+      - ./neo4j_data:/data
+      - neo4j_logs:/logs
+
+    restart: unless-stopped
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "cypher-shell -u neo4j -p \"$$FINGRAPH_NEO4J_PASSWORD\" \"RETURN 1;\" >/dev/null 2>&1"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+
+  qdrant:
+    image: qdrant/qdrant:v1.19.1
+    container_name: fingraph-qdrant
+
+    ports:
+      - "127.0.0.1:6333:6333"
+      - "127.0.0.1:6334:6334"
+
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+
+    restart: unless-stopped
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "bash",
+          "-lc",
+          "exec 3<>/dev/tcp/127.0.0.1/6333 && printf 'GET / HTTP/1.1\\r\\nHost: localhost\\r\\nConnection: close\\r\\n\\r\\n' >&3 && IFS= read -r status <&3 && [[ \"$$status\" == *\"200 OK\"* ]]"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: fingraph-api
+
+    env_file:
+      - .env.dev
+
+    environment:
+      FINGRAPH_API_HOST: "0.0.0.0"
+      FINGRAPH_API_PORT: "8000"
+
+      FINGRAPH_QDRANT_URL: "http://qdrant:6333"
+      FINGRAPH_NEO4J_URI: "bolt://neo4j:7687"
+
+      FINGRAPH_LLM_STATE_DB_PATH: "/app/data/state/fingraph_runs.db"
+
+    ports:
+      - "127.0.0.1:8000:8000"
+
+    volumes:
+      - ./data:/app/data
+
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+
+    restart: unless-stopped
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  neo4j_logs:

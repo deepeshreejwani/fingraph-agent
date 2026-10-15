@@ -1,0 +1,1998 @@
+[
+  {
+    "id": "msft_revenue_2026",
+    "question": "What was Microsoft revenue in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Microsoft revenue for economic year 2026 is 331839000000 USD."
+    ]
+  },
+  {
+    "id": "msft_revenue_2024",
+    "question": "What was Microsoft revenue in 2024?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Microsoft revenue for economic year 2024 is 245122000000 USD."
+    ]
+  },
+  {
+    "id": "msft_revenue_change_2024_2026",
+    "question": "What was the percentage change in Microsoft revenue from 2024 to 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024,
+      2026
+    ],
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2026,
+      "start_value": "245122000000",
+      "end_value": "331839000000",
+      "absolute_change": "86717000000",
+      "percentage_change": "35.377"
+    },
+    "reference_notes": [
+      "The percentage change must come from the deterministic calculation and equal 35.377 percent."
+    ]
+  },
+  {
+    "id": "nvda_net_income_2026",
+    "question": "What was NVIDIA net income in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "NVIDIA net income for economic year 2026 is 120067000000 USD."
+    ]
+  },
+  {
+    "id": "nvda_net_income_2024",
+    "question": "What was NVIDIA net income in 2024?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "NVIDIA net income for economic year 2024 is 29760000000 USD."
+    ]
+  },
+  {
+    "id": "nvda_net_income_change_2024_2026",
+    "question": "By what percentage did NVIDIA net income change from 2024 to 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024,
+      2026
+    ],
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2026,
+      "start_value": "29760000000",
+      "end_value": "120067000000",
+      "absolute_change": "90307000000",
+      "percentage_change": "303.451"
+    },
+    "reference_notes": [
+      "The percentage change must be derived deterministically and equal 303.451 percent."
+    ]
+  },
+  {
+    "id": "nvda_latest_risks",
+    "question": "What risks does NVIDIA describe in its 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "An unqualified singular 10-K question must use NVIDIA's latest indexed filing, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "nvda_risks_2022",
+    "question": "What risks did NVIDIA describe in its 2022 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2022
+    ],
+    "reference_notes": [
+      "The answer must be grounded only in NVIDIA fiscal year 2022 risk evidence."
+    ]
+  },
+  {
+    "id": "nvda_risks_longitudinal",
+    "question": "How have NVIDIA's risks changed over the years?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "expected_fiscal_years": [
+      2019,
+      2026
+    ],
+    "reference_notes": [
+      "The answer should compare multiple periods and include both the earliest and latest represented years."
+    ]
+  },
+  {
+    "id": "aapl_latest_competitive_risks",
+    "question": "Describe Apple's competitive risks.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use the latest indexed Apple risk-factor filing evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "aapl_risks_2024",
+    "question": "What risks did Apple describe in its 2024 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Use only Apple fiscal year 2024 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "amzn_latest_risks",
+    "question": "What risks does Amazon describe in its 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Amazon's latest indexed risk-factor filing evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "googl_latest_risks",
+    "question": "What risks does Alphabet describe in its 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Alphabet's latest indexed risk-factor filing evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "meta_latest_risks",
+    "question": "What risks does Meta describe in its 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Meta's latest indexed risk-factor filing evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "msft_latest_risks",
+    "question": "What risks does Microsoft describe in its 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Use Microsoft's latest indexed risk-factor filing evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "amzn_latest_business",
+    "question": "Describe Amazon's business.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Amazon's latest Item 1 Business evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "googl_latest_business",
+    "question": "Describe Alphabet's business.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Alphabet's latest Item 1 Business evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "meta_latest_business",
+    "question": "Describe Meta's business.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Meta's latest Item 1 Business evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "msft_latest_business",
+    "question": "Describe Microsoft's business.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Ground the answer in Microsoft's latest Item 1 Business evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "nvda_latest_business",
+    "question": "Describe NVIDIA's business.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Ground the answer in NVIDIA's latest Item 1 Business evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "aapl_latest_business",
+    "question": "Describe Apple's business.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Apple's latest Item 1 Business evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "msft_revenue_drivers",
+    "question": "How did Microsoft's revenue change from 2024 to 2026 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2026,
+      "start_value": "245122000000",
+      "end_value": "331839000000",
+      "absolute_change": "86717000000",
+      "percentage_change": "35.377"
+    },
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_drivers",
+    "question": "How did NVIDIA's net income change from 2024 to 2026 and what does management say drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2026,
+      "start_value": "29760000000",
+      "end_value": "120067000000",
+      "absolute_change": "90307000000",
+      "percentage_change": "303.451"
+    },
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_latest_market_risk",
+    "question": "What market risks does NVIDIA describe?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Ground the answer in NVIDIA's latest Item 7A Market Risk evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "msft_latest_market_risk",
+    "question": "What market risks does Microsoft describe?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Ground the answer in Microsoft's latest Item 7A Market Risk evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "unsupported_tesla_revenue",
+    "question": "What was Tesla revenue in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Tesla is outside the configured FinGraph company universe. The system must not invent a Tesla result."
+    ]
+  },
+  {
+    "id": "unsupported_msft_ebitda",
+    "question": "What was Microsoft EBITDA in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "EBITDA is not one of the canonical financial metrics currently supported by the controlled graph schema."
+    ]
+  },
+  {
+    "id": "unsupported_msft_free_cash_flow",
+    "question": "What was Microsoft free cash flow in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Free cash flow is not one of the canonical financial metrics currently supported by the controlled graph schema."
+    ]
+  },
+  {
+    "id": "unsupported_nvda_future_risks",
+    "question": "What risks does NVIDIA describe in its 2030 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The indexed SEC corpus does not contain NVIDIA fiscal year 2030 evidence. The system must not answer using a different year."
+    ]
+  },
+  {
+    "id": "unsupported_tesla_business",
+    "question": "Describe Tesla's business.",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Tesla is outside the configured FinGraph company universe. Evidence about another company must not be presented as Tesla evidence."
+    ]
+  },
+  {
+    "id": "aapl_revenue_2025",
+    "question": "What was Apple revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Apple's structured graph evidence for economic year 2025 and do not substitute a filing-context year."
+    ]
+  },
+  {
+    "id": "amzn_revenue_2025",
+    "question": "What was Amazon revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Amazon's structured graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "googl_revenue_2025",
+    "question": "What was Alphabet revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Alphabet's structured graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "meta_revenue_2025",
+    "question": "What was Meta revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Meta's structured graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_net_income_2026",
+    "question": "What was Microsoft net income in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Use Microsoft's structured net-income graph evidence for economic year 2026."
+    ]
+  },
+  {
+    "id": "nvda_revenue_2026",
+    "question": "What was NVIDIA revenue in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Use NVIDIA's structured revenue graph evidence for economic year 2026."
+    ]
+  },
+  {
+    "id": "msft_revenue_2025",
+    "question": "What was Microsoft revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Microsoft revenue for economic year 2025 must come from structured graph evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_2025",
+    "question": "What was NVIDIA net income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "NVIDIA net income for economic year 2025 must come from structured graph evidence."
+    ]
+  },
+  {
+    "id": "msft_revenue_change_2025_2026",
+    "question": "What was the percentage change in Microsoft revenue from 2025 to 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025,
+      2026
+    ],
+    "expected_calculation": {
+      "start_year": 2025,
+      "end_year": 2026,
+      "start_value": "281724000000",
+      "end_value": "331839000000",
+      "absolute_change": "50115000000",
+      "percentage_change": "17.789"
+    },
+    "reference_notes": [
+      "The percentage change must come from deterministic arithmetic and equal 17.789 percent."
+    ]
+  },
+  {
+    "id": "nvda_net_income_change_2025_2026",
+    "question": "By what percentage did NVIDIA net income change from 2025 to 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025,
+      2026
+    ],
+    "expected_calculation": {
+      "start_year": 2025,
+      "end_year": 2026,
+      "start_value": "72880000000",
+      "end_value": "120067000000",
+      "absolute_change": "47187000000",
+      "percentage_change": "64.746"
+    },
+    "reference_notes": [
+      "The percentage change must come from deterministic arithmetic and equal 64.746 percent."
+    ]
+  },
+  {
+    "id": "msft_revenue_change_2024_2025",
+    "question": "What was the percentage change in Microsoft revenue from 2024 to 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024,
+      2025
+    ],
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2025,
+      "start_value": "245122000000",
+      "end_value": "281724000000",
+      "absolute_change": "36602000000",
+      "percentage_change": "14.932"
+    },
+    "reference_notes": [
+      "The percentage change must come from deterministic arithmetic and equal 14.932 percent."
+    ]
+  },
+  {
+    "id": "nvda_net_income_change_2024_2025",
+    "question": "By what percentage did NVIDIA net income change from 2024 to 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024,
+      2025
+    ],
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2025,
+      "start_value": "29760000000",
+      "end_value": "72880000000",
+      "absolute_change": "43120000000",
+      "percentage_change": "144.892"
+    },
+    "reference_notes": [
+      "The percentage change must come from deterministic arithmetic and equal 144.892 percent."
+    ]
+  },
+  {
+    "id": "aapl_business_2018",
+    "question": "Describe Apple's business in its 2018 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2018
+    ],
+    "reference_notes": [
+      "Ground the answer only in Apple's fiscal year 2018 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "amzn_business_2019",
+    "question": "Describe Amazon's business in its 2019 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2019
+    ],
+    "reference_notes": [
+      "Ground the answer only in Amazon's fiscal year 2019 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "googl_business_2020",
+    "question": "Describe Alphabet's business in its 2020 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2020
+    ],
+    "reference_notes": [
+      "Ground the answer only in Alphabet's fiscal year 2020 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "meta_business_2021",
+    "question": "Describe Meta's business in its 2021 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2021
+    ],
+    "reference_notes": [
+      "Ground the answer only in Meta's fiscal year 2021 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "msft_business_2022",
+    "question": "Describe Microsoft's business in its 2022 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2022
+    ],
+    "reference_notes": [
+      "Ground the answer only in Microsoft's fiscal year 2022 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "nvda_business_2023",
+    "question": "Describe NVIDIA's business in its 2023 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2023
+    ],
+    "reference_notes": [
+      "Ground the answer only in NVIDIA's fiscal year 2023 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "amzn_risks_2018",
+    "question": "What risks did Amazon describe in its 2018 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2018
+    ],
+    "reference_notes": [
+      "Use only Amazon fiscal year 2018 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "googl_risks_2019",
+    "question": "What risks did Alphabet describe in its 2019 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2019
+    ],
+    "reference_notes": [
+      "Use only Alphabet fiscal year 2019 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "meta_risks_2020",
+    "question": "What risks did Meta describe in its 2020 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2020
+    ],
+    "reference_notes": [
+      "Use only Meta fiscal year 2020 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "msft_risks_2021",
+    "question": "What risks did Microsoft describe in its 2021 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2021
+    ],
+    "reference_notes": [
+      "Use only Microsoft fiscal year 2021 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "aapl_risks_2022",
+    "question": "What risks did Apple describe in its 2022 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2022
+    ],
+    "reference_notes": [
+      "Use only Apple fiscal year 2022 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "nvda_risks_2023",
+    "question": "What risks did NVIDIA describe in its 2023 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2023
+    ],
+    "reference_notes": [
+      "Use only NVIDIA fiscal year 2023 risk-factor evidence."
+    ]
+  },
+  {
+    "id": "msft_market_risk_2024",
+    "question": "What market risks did Microsoft describe in its 2024 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Ground the answer in Microsoft's fiscal year 2024 Item 7A Market Risk evidence."
+    ]
+  },
+  {
+    "id": "nvda_market_risk_2024",
+    "question": "What market risks did NVIDIA describe in its 2024 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Ground the answer in NVIDIA's fiscal year 2024 Item 7A Market Risk evidence."
+    ]
+  },
+  {
+    "id": "aapl_market_risk_2024",
+    "question": "What market risks did Apple describe in its 2024 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Ground the answer in Apple's fiscal year 2024 Item 7A Market Risk evidence."
+    ]
+  },
+  {
+    "id": "amzn_market_risk_2024",
+    "question": "What market risks did Amazon describe in its 2024 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Ground the answer in Amazon's fiscal year 2024 Item 7A Market Risk evidence."
+    ]
+  },
+  {
+    "id": "msft_business_longitudinal",
+    "question": "How has Microsoft's business evolved over the years?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "expected_fiscal_years": [
+      2019,
+      2026
+    ],
+    "reference_notes": [
+      "The answer should compare multiple Microsoft Item 1 periods and represent both the earliest and latest indexed years."
+    ]
+  },
+  {
+    "id": "aapl_business_longitudinal",
+    "question": "How has Apple's business evolved over the years?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "expected_fiscal_years": [
+      2018,
+      2025
+    ],
+    "reference_notes": [
+      "The answer should compare multiple Apple Item 1 periods and represent both the earliest and latest indexed years."
+    ]
+  },
+  {
+    "id": "msft_revenue_drivers_2025_2026",
+    "question": "How did Microsoft's revenue change from 2025 to 2026 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_calculation": {
+      "start_year": 2025,
+      "end_year": 2026,
+      "start_value": "281724000000",
+      "end_value": "331839000000",
+      "absolute_change": "50115000000",
+      "percentage_change": "17.789"
+    },
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_drivers_2025_2026",
+    "question": "How did NVIDIA's net income change from 2025 to 2026 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_calculation": {
+      "start_year": 2025,
+      "end_year": 2026,
+      "start_value": "72880000000",
+      "end_value": "120067000000",
+      "absolute_change": "47187000000",
+      "percentage_change": "64.746"
+    },
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "msft_revenue_drivers_2024_2025",
+    "question": "How did Microsoft's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2025,
+      "start_value": "245122000000",
+      "end_value": "281724000000",
+      "absolute_change": "36602000000",
+      "percentage_change": "14.932"
+    },
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_drivers_2024_2025",
+    "question": "How did NVIDIA's net income change from 2024 to 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_calculation": {
+      "start_year": 2024,
+      "end_year": 2025,
+      "start_value": "29760000000",
+      "end_value": "72880000000",
+      "absolute_change": "43120000000",
+      "percentage_change": "144.892"
+    },
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "msft_revenue_2026_context",
+    "question": "What was Microsoft revenue in 2026 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from 2026 Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_2026_context",
+    "question": "What was NVIDIA net income in 2026 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured net-income value must come from graph evidence while the explanation must come from 2026 NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "msft_revenue_2024_context",
+    "question": "What was Microsoft revenue in 2024 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from 2024 Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_2024_context",
+    "question": "What was NVIDIA net income in 2024 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured net-income value must come from graph evidence while the explanation must come from 2024 NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "msft_revenue_2025_context",
+    "question": "What was Microsoft revenue in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from 2025 Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_net_income_2025_context",
+    "question": "What was NVIDIA net income in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured net-income value must come from graph evidence while the explanation must come from 2025 NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "unsupported_msft_revenue_2030",
+    "question": "What was Microsoft revenue in 2030?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The configured graph corpus has no Microsoft economic-year 2030 result. The system must not substitute another year."
+    ]
+  },
+  {
+    "id": "unsupported_nvda_net_income_2030",
+    "question": "What was NVIDIA net income in 2030?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The configured graph corpus has no NVIDIA economic-year 2030 result. The system must not substitute another year."
+    ]
+  },
+  {
+    "id": "unsupported_aapl_revenue_2030",
+    "question": "What was Apple revenue in 2030?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The configured graph corpus has no Apple economic-year 2030 result. The system must not substitute another year."
+    ]
+  },
+  {
+    "id": "unsupported_meta_ebitda",
+    "question": "What was Meta EBITDA in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "EBITDA is not one of the canonical financial metrics currently supported by the controlled graph schema."
+    ]
+  },
+  {
+    "id": "unsupported_nvda_free_cash_flow",
+    "question": "What was NVIDIA free cash flow in 2026?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Free cash flow is not one of the canonical financial metrics currently supported by the controlled graph schema."
+    ]
+  },
+  {
+    "id": "unsupported_aapl_future_business",
+    "question": "Describe Apple's business in its 2030 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The indexed SEC corpus has no Apple fiscal year 2030 evidence. The system must not answer from another year."
+    ]
+  },
+  {
+    "id": "unsupported_amzn_future_risks",
+    "question": "What risks does Amazon describe in its 2030 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The indexed SEC corpus has no Amazon fiscal year 2030 evidence. The system must not answer from another year."
+    ]
+  },
+  {
+    "id": "unsupported_msft_future_business",
+    "question": "Describe Microsoft's business in its 2030 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The indexed SEC corpus has no Microsoft fiscal year 2030 evidence. The system must not answer from another year."
+    ]
+  },
+  {
+    "id": "unsupported_spotify_business",
+    "question": "Describe Spotify's business.",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Spotify is outside the configured FinGraph company universe. Evidence about another company must not be presented as Spotify evidence."
+    ]
+  },
+  {
+    "id": "unsupported_oracle_revenue_2025",
+    "question": "What was Oracle revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Oracle is outside the configured FinGraph company universe. The system must not invent an Oracle graph result."
+    ]
+  },
+  {
+    "id": "aapl_operating_income_2025",
+    "question": "What was Apple operating income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Apple's structured operating-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "amzn_operating_income_2025",
+    "question": "What was Amazon operating income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Amazon's structured operating-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "googl_operating_income_2025",
+    "question": "What was Alphabet operating income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Alphabet's structured operating-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "meta_operating_income_2025",
+    "question": "What was Meta operating income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Meta's structured operating-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_operating_income_2025",
+    "question": "What was Microsoft operating income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Microsoft's structured operating-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "nvda_operating_income_2025",
+    "question": "What was NVIDIA operating income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use NVIDIA's structured operating-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "aapl_total_assets_2025",
+    "question": "What were Apple's total assets in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Apple's structured total-assets graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "amzn_total_assets_2025",
+    "question": "What were Amazon's total assets in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Amazon's structured total-assets graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "googl_total_assets_2025",
+    "question": "What were Alphabet's total assets in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Alphabet's structured total-assets graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "meta_total_assets_2025",
+    "question": "What were Meta's total assets in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Meta's structured total-assets graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_total_assets_2025",
+    "question": "What were Microsoft's total assets in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Microsoft's structured total-assets graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "nvda_total_assets_2025",
+    "question": "What were NVIDIA's total assets in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use NVIDIA's structured total-assets graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "amzn_total_liabilities_2025",
+    "question": "What were Amazon's total liabilities in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Amazon's indexed economic-year 2025 facts do not contain the canonical Liabilities concept. The system must return insufficient evidence and must not substitute LiabilitiesCurrent or LiabilitiesAndStockholdersEquity."
+    ]
+  },
+  {
+    "id": "googl_total_liabilities_2025",
+    "question": "What were Alphabet's total liabilities in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Alphabet's structured total-liabilities graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "meta_total_liabilities_2025",
+    "question": "What were Meta's total liabilities in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Meta's structured total-liabilities graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_total_liabilities_2025",
+    "question": "What were Microsoft's total liabilities in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Microsoft's structured total-liabilities graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "aapl_cash_2025",
+    "question": "What was Apple's cash and cash equivalents balance in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Apple's canonical cash graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "amzn_cash_2025",
+    "question": "What was Amazon's cash and cash equivalents balance in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Amazon's canonical cash graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_cash_2025",
+    "question": "What was Microsoft's cash and cash equivalents balance in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Microsoft's canonical cash graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "nvda_cash_2025",
+    "question": "What was NVIDIA's cash and cash equivalents balance in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use NVIDIA's canonical cash graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "aapl_latest_market_risk",
+    "question": "What market risks does Apple describe?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Apple's latest indexed Item 7A Market Risk evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "amzn_latest_market_risk",
+    "question": "What market risks does Amazon describe?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Amazon's latest indexed Item 7A Market Risk evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "googl_latest_market_risk",
+    "question": "What market risks does Alphabet describe?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Alphabet's latest indexed Item 7A Market Risk evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "meta_latest_market_risk",
+    "question": "What market risks does Meta describe?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Meta's latest indexed Item 7A Market Risk evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "aapl_latest_mda",
+    "question": "Summarize Apple's latest MD&A discussion.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Apple's latest indexed Item 7 MD&A evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "amzn_latest_mda",
+    "question": "Summarize Amazon's latest MD&A discussion.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Amazon's latest indexed Item 7 MD&A evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "googl_latest_mda",
+    "question": "Summarize Alphabet's latest MD&A discussion.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Ground the answer in Alphabet's latest indexed Item 7 MD&A evidence, fiscal year 2025."
+    ]
+  },
+  {
+    "id": "aapl_net_income_2025",
+    "question": "What was Apple net income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Apple's structured net-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_latest_mda",
+    "question": "Summarize Microsoft's latest MD&A discussion.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Ground the answer in Microsoft's latest indexed Item 7 MD&A evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "nvda_latest_mda",
+    "question": "Summarize NVIDIA's latest MD&A discussion.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2026
+    ],
+    "reference_notes": [
+      "Ground the answer in NVIDIA's latest indexed Item 7 MD&A evidence, fiscal year 2026."
+    ]
+  },
+  {
+    "id": "amzn_business_longitudinal",
+    "question": "How has Amazon's business evolved over the years?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "expected_fiscal_years": [
+      2018,
+      2025
+    ],
+    "reference_notes": [
+      "Compare multiple Amazon Item 1 periods and represent both the earliest and latest indexed years."
+    ]
+  },
+  {
+    "id": "googl_business_longitudinal",
+    "question": "How has Alphabet's business evolved over the years?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "expected_fiscal_years": [
+      2018,
+      2025
+    ],
+    "reference_notes": [
+      "Compare multiple Alphabet Item 1 periods and represent both the earliest and latest indexed years."
+    ]
+  },
+  {
+    "id": "meta_net_income_2025",
+    "question": "What was Meta net income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Meta's structured net-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "msft_risks_longitudinal",
+    "question": "How have Microsoft's risks changed over the years?",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "expected_fiscal_years": [
+      2019,
+      2026
+    ],
+    "reference_notes": [
+      "Compare multiple Microsoft Item 1A periods and represent both the earliest and latest indexed years."
+    ]
+  },
+  {
+    "id": "aapl_revenue_2025_context",
+    "question": "What was Apple revenue in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from Apple 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "amzn_revenue_2025_context",
+    "question": "What was Amazon revenue in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from Amazon 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "googl_revenue_2025_context",
+    "question": "What was Alphabet revenue in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from Alphabet 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "meta_revenue_2025_context",
+    "question": "What was Meta revenue in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured revenue value must come from graph evidence while the explanation must come from Meta 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "msft_operating_income_2025_context",
+    "question": "What was Microsoft operating income in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured operating-income value must come from graph evidence while the explanation must come from Microsoft 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "amzn_operating_income_2025_context",
+    "question": "What was Amazon operating income in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured operating-income value must come from graph evidence while the explanation must come from Amazon 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "googl_operating_income_2025_context",
+    "question": "What was Alphabet operating income in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured operating-income value must come from graph evidence while the explanation must come from Alphabet 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "meta_operating_income_2025_context",
+    "question": "What was Meta operating income in 2025 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "The structured operating-income value must come from graph evidence while the explanation must come from Meta 2025 MD&A evidence."
+    ]
+  },
+  {
+    "id": "aapl_revenue_drivers_2024_2025",
+    "question": "How did Apple's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Apple MD&A evidence."
+    ]
+  },
+  {
+    "id": "amzn_revenue_drivers_2024_2025",
+    "question": "How did Amazon's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Amazon MD&A evidence."
+    ]
+  },
+  {
+    "id": "googl_revenue_drivers_2024_2025",
+    "question": "How did Alphabet's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Alphabet MD&A evidence."
+    ]
+  },
+  {
+    "id": "meta_revenue_drivers_2024_2025",
+    "question": "How did Meta's revenue change from 2024 to 2025 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Meta MD&A evidence."
+    ]
+  },
+  {
+    "id": "nvda_revenue_drivers_2024_2026",
+    "question": "How did NVIDIA's revenue change from 2024 to 2026 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved NVIDIA MD&A evidence."
+    ]
+  },
+  {
+    "id": "msft_net_income_drivers_2025_2026",
+    "question": "How did Microsoft's net income change from 2025 to 2026 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Financial change must use graph values and deterministic arithmetic.",
+      "Narrative drivers must be grounded in retrieved Microsoft MD&A evidence."
+    ]
+  },
+  {
+    "id": "multi_graph_operating_income_msft_amzn_googl_2025",
+    "question": "Compare operating income for Microsoft, Amazon and Alphabet in 2025.",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "Return structured operating-income evidence for Microsoft, Amazon and Alphabet for economic year 2025 with company-specific SEC provenance."
+    ]
+  },
+  {
+    "id": "multi_graph_revenue_aapl_amzn_2024",
+    "question": "Compare Apple and Amazon revenue in 2024.",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Use structured revenue evidence for both Apple and Amazon for economic year 2024."
+    ]
+  },
+  {
+    "id": "googl_net_income_2025",
+    "question": "What was Alphabet net income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Alphabet's structured net-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "multi_graph_net_income_msft_nvda_2025",
+    "question": "Compare Microsoft and NVIDIA net income in 2025.",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "reference_notes": [
+      "Use structured net-income evidence for both Microsoft and NVIDIA for economic year 2025."
+    ]
+  },
+  {
+    "id": "multi_vector_ai_risks_msft_amzn_meta_googl",
+    "question": "Compare AI infrastructure risks reported by Microsoft, Amazon, Meta and Alphabet.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 4,
+    "reference_notes": [
+      "Evidence must cover Microsoft, Amazon, Meta and Alphabet, and company-specific claims must cite evidence belonging to the same company."
+    ]
+  },
+  {
+    "id": "multi_vector_risks_aapl_amzn_2024",
+    "question": "Compare the risks Apple and Amazon described in their 2024 10-K filings.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 2,
+    "expected_fiscal_years": [
+      2024
+    ],
+    "reference_notes": [
+      "Use 2024 Item 1A evidence from both Apple and Amazon, with company-local citation grounding."
+    ]
+  },
+  {
+    "id": "multi_vector_business_aapl_amzn_googl_meta_2025",
+    "question": "Compare the businesses described by Apple, Amazon, Alphabet and Meta in their 2025 10-K filings.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 4,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use 2025 Item 1 Business evidence from all four requested companies."
+    ]
+  },
+  {
+    "id": "multi_vector_market_risk_aapl_amzn_googl_meta_2025",
+    "question": "Compare market risks reported by Apple, Amazon, Alphabet and Meta in their 2025 10-K filings.",
+    "expected_route": "vector",
+    "expected_insufficient": false,
+    "min_citations": 4,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use 2025 Item 7A Market Risk evidence from all four requested companies."
+    ]
+  },
+  {
+    "id": "multi_hybrid_revenue_msft_amzn_2025",
+    "question": "Compare Microsoft and Amazon revenue in 2025 and explain what management said drove performance.",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 4,
+    "reference_notes": [
+      "Structured comparison must cover both companies and narrative evidence must be company-specific MD&A evidence."
+    ]
+  },
+  {
+    "id": "multi_hybrid_operating_income_googl_meta_2025",
+    "question": "Compare operating income for Alphabet and Meta in 2025 and discuss what management said about performance.",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 4,
+    "reference_notes": [
+      "Structured comparison must cover both companies and narrative evidence must be grounded in company-specific MD&A disclosures."
+    ],
+    "expected_fiscal_years": [
+      2025
+    ]
+  },
+  {
+    "id": "multihop_aapl_amzn_revenue_2024_risks",
+    "question": "Between Apple and Amazon, which company had higher revenue in 2024, and how did that company describe its risks in its 2024 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2024 revenue, deterministically select the higher-revenue company, then retrieve only that company's 2024 Item 1A evidence."
+    ]
+  },
+  {
+    "id": "multihop_msft_nvda_revenue_2025_business",
+    "question": "Between Microsoft and NVIDIA, which company had higher revenue in 2025, and how did that company describe its business in its 2025 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2025 revenue, deterministically select the higher-revenue company, then retrieve only that company's 2025 Item 1 Business evidence."
+    ]
+  },
+  {
+    "id": "multihop_googl_meta_revenue_2025_market_risk",
+    "question": "Between Alphabet and Meta, which company had higher revenue in 2025, and how did that company describe its market risks in its 2025 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2025 revenue, select the higher-revenue company, then retrieve only that company's 2025 Item 7A evidence."
+    ]
+  },
+  {
+    "id": "multihop_aapl_meta_net_income_2025_risks",
+    "question": "Between Apple and Meta, which company had higher net income in 2025, and how did that company describe its risks in its 2025 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2025 net income, select the higher company deterministically, then retrieve only that company's 2025 Item 1A evidence."
+    ]
+  },
+  {
+    "id": "multihop_amzn_googl_operating_income_2025_business",
+    "question": "Between Amazon and Alphabet, which company had higher operating income in 2025, and how did that company describe its business in its 2025 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2025 operating income, select the higher company, then retrieve only that company's 2025 Item 1 evidence."
+    ]
+  },
+  {
+    "id": "amzn_net_income_2025",
+    "question": "What was Amazon net income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": false,
+    "min_citations": 1,
+    "expected_fiscal_years": [
+      2025
+    ],
+    "reference_notes": [
+      "Use Amazon's structured net-income graph evidence for economic year 2025."
+    ]
+  },
+  {
+    "id": "multihop_aapl_googl_revenue_2025_lower_risks",
+    "question": "Between Apple and Alphabet, which company had lower revenue in 2025, and how did that company describe its risks in its 2025 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2025 revenue, deterministically select the lower-revenue company, then retrieve only that company's 2025 Item 1A evidence."
+    ]
+  },
+  {
+    "id": "multihop_meta_amzn_assets_2025_lower_business",
+    "question": "Between Meta and Amazon, which company had lower total assets in 2025, and how did that company describe its business in its 2025 10-K?",
+    "expected_route": "hybrid",
+    "expected_insufficient": false,
+    "min_citations": 3,
+    "reference_notes": [
+      "The workflow must compare structured 2025 total assets, deterministically select the lower-assets company, then retrieve only that company's 2025 Item 1 evidence."
+    ]
+  },
+  {
+    "id": "unsupported_netflix_revenue_2025",
+    "question": "What was Netflix revenue in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Netflix is outside the configured FinGraph company universe. The system must not invent a result."
+    ]
+  },
+  {
+    "id": "unsupported_tesla_net_income_2025",
+    "question": "What was Tesla net income in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Tesla is outside the configured FinGraph company universe. The system must not invent a result."
+    ]
+  },
+  {
+    "id": "unsupported_amd_business_2025",
+    "question": "Describe AMD's business in its 2025 10-K.",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "AMD is outside the configured FinGraph company universe. The system must not substitute evidence from another company."
+    ]
+  },
+  {
+    "id": "unsupported_salesforce_risks_2025",
+    "question": "What risks did Salesforce describe in its 2025 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Salesforce is outside the configured FinGraph company universe. The system must not substitute another company's evidence."
+    ]
+  },
+  {
+    "id": "unsupported_amzn_revenue_2030",
+    "question": "What was Amazon revenue in 2030?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The configured graph corpus has no Amazon economic-year 2030 result."
+    ]
+  },
+  {
+    "id": "unsupported_googl_operating_income_2030",
+    "question": "What was Alphabet operating income in 2030?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The configured graph corpus has no Alphabet economic-year 2030 result."
+    ]
+  },
+  {
+    "id": "unsupported_meta_assets_2030",
+    "question": "What were Meta's total assets in 2030?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The configured graph corpus has no Meta economic-year 2030 result."
+    ]
+  },
+  {
+    "id": "unsupported_aapl_market_risk_2030",
+    "question": "What market risks did Apple describe in its 2030 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "The indexed SEC corpus has no Apple fiscal year 2030 market-risk evidence."
+    ]
+  },
+  {
+    "id": "unsupported_googl_gross_profit_2025",
+    "question": "What was Alphabet gross profit in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Gross profit is not one of the canonical financial metrics currently supported by the controlled graph schema."
+    ]
+  },
+  {
+    "id": "unsupported_meta_eps_2025",
+    "question": "What was Meta EPS in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "EPS is intentionally unsupported by the current controlled graph metric schema."
+    ]
+  },
+  {
+    "id": "unsupported_amzn_operating_cash_flow_2025",
+    "question": "What was Amazon operating cash flow in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Operating cash flow is intentionally unsupported by the current controlled graph metric schema."
+    ]
+  },
+  {
+    "id": "unsupported_aapl_ebit_2025",
+    "question": "What was Apple EBIT in 2025?",
+    "expected_route": "graph",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "EBIT is intentionally unsupported by the current controlled graph metric schema."
+    ]
+  },
+  {
+    "id": "unsupported_msft_revenue_2030_context",
+    "question": "What was Microsoft revenue in 2030 and explain what management said drove performance?",
+    "expected_route": "hybrid",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Neither a 2030 graph fact nor 2030 Microsoft MD&A evidence exists; the system must not backfill from another year."
+    ]
+  },
+  {
+    "id": "unsupported_oracle_market_risk_2025",
+    "question": "What market risks did Oracle describe in its 2025 10-K?",
+    "expected_route": "vector",
+    "expected_insufficient": true,
+    "min_citations": 0,
+    "reference_notes": [
+      "Oracle is outside the configured FinGraph company universe. The system must not substitute another company's evidence."
+    ]
+  }
+]

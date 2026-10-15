@@ -1,0 +1,50 @@
+[
+  {
+    "id": "companies_list",
+    "question": "What companies are available in the graph?",
+    "expected_non_empty": true,
+    "expected_tickers": [
+      "AAPL",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "MSFT",
+      "NVDA"
+    ]
+  },
+  {
+    "id": "msft_revenue_2024_2026",
+    "question": "Show Microsoft's annual revenue observations for economic years 2024 through 2026.",
+    "expected_non_empty": true,
+    "expected_values": {
+      "2024": 245122000000.0,
+      "2025": 281724000000.0,
+      "2026": 331839000000.0
+    }
+  },
+  {
+    "id": "nvda_net_income_2024_2026",
+    "question": "Show NVIDIA annual net income observations for economic years 2024 through 2026.",
+    "expected_non_empty": true,
+    "expected_values": {
+      "2024": 29760000000.0,
+      "2025": 72880000000.0,
+      "2026": 120067000000.0
+    }
+  },
+  {
+    "id": "aapl_exists",
+    "question": "Does Apple exist in the graph?",
+    "expected_non_empty": true
+  },
+  {
+    "id": "meta_filings",
+    "question": "Show Meta's available 10-K filings.",
+    "expected_non_empty": true
+  },
+  {
+    "id": "googl_sections",
+    "question": "Show the section names available for Alphabet filings.",
+    "expected_non_empty": true
+  }
+]

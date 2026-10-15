@@ -1,0 +1,77 @@
+[
+  {
+    "id": "msft_revenue",
+    "question": "What was Microsoft's revenue in 2026?",
+    "expected_route": "graph"
+  },
+  {
+    "id": "nvda_risks",
+    "question": "What risks does NVIDIA describe in its 10-K?",
+    "expected_route": "vector"
+  },
+  {
+    "id": "msft_revenue_drivers",
+    "question": "How did Microsoft's revenue change from 2024 to 2026 and explain what management said drove the trend?",
+    "expected_route": "hybrid"
+  },
+  {
+    "id": "meta_filings",
+    "question": "Show Meta's available filings.",
+    "expected_route": "graph"
+  },
+  {
+    "id": "aapl_competitive_risks",
+    "question": "Describe Apple's competitive risks.",
+    "expected_route": "vector"
+  },
+  {
+    "id": "amzn_business",
+    "question": "Describe Amazon's business.",
+    "expected_route": "vector"
+  },
+  {
+    "id": "googl_assets",
+    "question": "What were Alphabet's total assets in 2025?",
+    "expected_route": "graph"
+  },
+  {
+    "id": "nvda_income_drivers",
+    "question": "How did NVIDIA's net income change from 2024 to 2026 and what does management say drove performance?",
+    "expected_route": "hybrid"
+  },
+  {
+    "id": "msft_ticker",
+    "question": "What is Microsoft's ticker?",
+    "expected_route": "graph"
+  },
+  {
+    "id": "meta_risk_factors",
+    "question": "Summarize Meta's risk factors.",
+    "expected_route": "vector"
+  },
+  {
+    "id": "aapl_cash",
+    "question": "How much cash did Apple report in 2025?",
+    "expected_route": "graph"
+  },
+  {
+    "id": "googl_strategy",
+    "question": "What strategy does Alphabet discuss in its annual report?",
+    "expected_route": "vector"
+  },
+{
+"id": "aapl_annual_strategy",
+"question": "Describe Apple's annual strategy.",
+"expected_route": "vector"
+},
+{
+"id": "nvda_risks_over_years",
+"question": "What risks has NVIDIA discussed over the years?",
+"expected_route": "vector"
+},
+{
+"id": "amzn_business_value",
+"question": "What value does Amazon say its business provides customers?",
+"expected_route": "vector"
+}
+]

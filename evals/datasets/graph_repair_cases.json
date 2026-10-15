@@ -1,0 +1,32 @@
+[
+  {
+    "id": "invalid_relationship_msft_revenue",
+    "question": "What was Microsoft's revenue in fiscal 2026?",
+    "fault_type": "invalid_relationship"
+  },
+  {
+    "id": "invalid_property_msft_revenue_range",
+    "question": "What was Microsoft's revenue from 2024 to 2026?",
+    "fault_type": "invalid_property"
+  },
+  {
+    "id": "syntax_corruption_nvda_net_income",
+    "question": "What was NVIDIA net income in fiscal 2026?",
+    "fault_type": "syntax_corruption"
+  },
+  {
+    "id": "wrong_entity_alias_nvda_net_income",
+    "question": "What was NVIDIA net income in fiscal 2025?",
+    "fault_type": "wrong_entity_alias"
+  },
+  {
+    "id": "unsafe_query_msft_net_income",
+    "question": "What was Microsoft's net income in fiscal 2026?",
+    "fault_type": "unsafe_query"
+  },
+  {
+    "id": "empty_result_nvda_revenue",
+    "question": "What was NVIDIA revenue in fiscal 2026?",
+    "fault_type": "empty_result"
+  }
+]

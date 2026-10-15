@@ -1,0 +1,77 @@
+[
+  {
+    "id": "msft_revenue_2026",
+    "question": "What was Microsoft's revenue in 2026?",
+    "expected_route": "graph",
+    "expected_graph_non_empty": true,
+    "expected_values": {
+      "2026": 331839000000
+    }
+  },
+  {
+    "id": "nvda_risks",
+    "question": "What risks does NVIDIA describe in its 10-K?",
+    "expected_route": "vector",
+    "expected_vector_non_empty": true,
+    "expected_ticker": "NVDA",
+    "expected_section": "Item 1A. Risk Factors",
+    "expected_fiscal_years": [
+      2026
+    ]
+  },
+  {
+    "id": "nvda_risks_2022",
+    "question": "What risks did NVIDIA describe in its 2022 10-K?",
+    "expected_route": "vector",
+    "expected_vector_non_empty": true,
+    "expected_ticker": "NVDA",
+    "expected_section": "Item 1A. Risk Factors",
+    "expected_fiscal_years": [
+      2022
+    ]
+  },
+  {
+    "id": "msft_revenue_drivers",
+    "question": "How did Microsoft's revenue change from 2024 to 2026 and explain what management said drove the trend?",
+    "expected_route": "hybrid",
+    "expected_graph_non_empty": true,
+    "expected_vector_non_empty": true,
+    "expected_ticker": "MSFT",
+    "expected_section": "Item 7. MD&A",
+    "expected_values": {
+      "2024": 245122000000,
+      "2025": 281724000000,
+      "2026": 331839000000
+    }
+  },
+  {
+    "id": "nvda_net_income_drivers",
+    "question": "How did NVIDIA's net income change from 2024 to 2026 and what does management say drove performance?",
+    "expected_route": "hybrid",
+    "expected_graph_non_empty": true,
+    "expected_vector_non_empty": true,
+    "expected_ticker": "NVDA",
+    "expected_section": "Item 7. MD&A",
+    "expected_values": {
+      "2024": 29760000000,
+      "2025": 72880000000,
+      "2026": 120067000000
+    }
+  },
+  {
+    "id": "aapl_competitive_risks",
+    "question": "Describe Apple's competitive risks.",
+    "expected_route": "vector",
+    "expected_vector_non_empty": true,
+    "expected_ticker": "AAPL",
+    "expected_section": "Item 1A. Risk Factors"
+  },
+  {
+    "id": "amzn_business",
+    "question": "Describe Amazon's business.",
+    "expected_route": "vector",
+    "expected_vector_non_empty": true,
+    "expected_ticker": "AMZN",
+    "expected_section": "Item 1. Business"
+  }
+]

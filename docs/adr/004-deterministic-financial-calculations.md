@@ -1,0 +1,454 @@
+# ADR 004: Perform Financial Calculations Outside the LLM
+
+## Status
+
+Accepted
+
+## Context
+
+Financial questions frequently require arithmetic.
+
+Examples include:
+
+- absolute change;
+- percentage change;
+- period-over-period comparison;
+- margin calculation;
+- CAGR;
+- historical growth comparison.
+
+LLMs can perform arithmetic, but they are not appropriate as the authoritative numerical execution engine.
+
+A production-oriented financial system should be able to distinguish:
+
+```text
+fact retrieval
+```
+
+from:
+
+```text
+calculation execution
+```
+
+and:
+
+```text
+language generation
+```
+
+The calculation layer should therefore remain deterministic, testable, and auditable.
+
+## Decision
+
+Use the LLM and graph layers to identify and retrieve the required financial values.
+
+Perform supported financial calculations deterministically in Python.
+
+Use Decimal-compatible representations where precision matters.
+
+Return the calculation result and its underlying operands as structured evidence to answer synthesis.
+
+The LLM may explain the result, but it is not the authoritative source of the arithmetic.
+
+## Calculation flow
+
+Conceptually:
+
+```text
+user question
+      |
+      v
+route / intent detection
+      |
+      v
+retrieve required financial facts
+      |
+      v
+validate periods and operands
+      |
+      v
+deterministic Python calculation
+      |
+      v
+structured calculation object
+      |
+      v
+canonical evidence
+      |
+      v
+grounded answer synthesis
+```
+
+## Supported calculation patterns
+
+Current supported deterministic analytical patterns include:
+
+```text
+absolute change
+percentage change
+margin
+CAGR
+period comparison
+```
+
+These operations are implemented independently from free-form answer generation.
+
+## Absolute change
+
+For values:
+
+```text
+start_value
+end_value
+```
+
+absolute change is:
+
+```text
+end_value - start_value
+```
+
+Example:
+
+```text
+start_value = 100
+end_value   = 120
+
+absolute_change = 20
+```
+
+The LLM does not calculate this value itself.
+
+## Percentage change
+
+Percentage change is calculated as:
+
+```text
+((end_value - start_value) / start_value) * 100
+```
+
+Example:
+
+```text
+start_value = 100
+end_value   = 120
+
+percentage_change = 20%
+```
+
+The implementation must explicitly handle invalid cases such as a zero starting value.
+
+## Margin
+
+A margin calculation follows:
+
+```text
+numerator / denominator * 100
+```
+
+Examples can include:
+
+```text
+operating income / revenue
+net income / revenue
+```
+
+The calculation layer requires the correct financial facts and aligned period semantics before performing the arithmetic.
+
+## CAGR
+
+Compound Annual Growth Rate is calculated as:
+
+```text
+((end_value / start_value) ** (1 / periods)) - 1
+```
+
+and then expressed as a percentage.
+
+The number of periods must reflect the actual comparison interval.
+
+The LLM should not infer arbitrary period counts when the required temporal information is available deterministically.
+
+## Temporal correctness
+
+Calculation correctness depends on more than arithmetic.
+
+The operands must correspond to the intended economic periods.
+
+FinGraph Agent distinguishes between:
+
+```text
+filing year
+report date
+XBRL period start
+XBRL period end
+economic fiscal period
+```
+
+Calculations should use normalized fiscal-period semantics rather than blindly comparing facts based only on filing-level fiscal metadata.
+
+This prevents a correct arithmetic formula from being applied to incorrectly aligned financial periods.
+
+## Structured calculation evidence
+
+A calculation result should retain enough information to reconstruct the transformation.
+
+A structured calculation object can contain information such as:
+
+```text
+operation
+metric
+ticker
+start period
+end period
+start value
+end value
+result
+unit
+formula context
+source evidence IDs
+```
+
+This allows downstream synthesis to explain the calculation without recreating it.
+
+## Evidence flow
+
+Calculation evidence is treated as part of the canonical evidence model.
+
+Conceptually:
+
+```text
+FinancialFact
+     |
+     v
+FiscalPeriod
+     |
+     v
+deterministic calculation
+     |
+     v
+CalculationEvidence
+     |
+     v
+answer synthesis
+```
+
+The synthesis layer therefore receives the already-computed result.
+
+## Numerical precision
+
+Financial values can be large and may require predictable decimal behavior.
+
+The calculation layer therefore uses deterministic numeric representations rather than relying on free-form textual arithmetic.
+
+User-facing calculated decimals are rounded to three decimal places.
+
+This display rounding does not mean intermediate calculations should be prematurely rounded.
+
+## Validated examples
+
+Representative validated calculations include:
+
+```text
+Microsoft revenue percentage change
+2025 -> 2026
+17.789%
+```
+
+```text
+Microsoft revenue CAGR
+2024 -> 2026
+16.352%
+```
+
+```text
+operating margin example
+46.781%
+```
+
+```text
+net margin example
+40.305%
+```
+
+These values are generated by the deterministic calculation layer rather than model arithmetic.
+
+## Hybrid-question behavior
+
+Some questions require both calculation and narrative explanation.
+
+Example:
+
+```text
+How did Microsoft revenue change from 2025 to 2026,
+and what factors drove the change?
+```
+
+The workflow is:
+
+```text
+question
+   |
+   +----------------------+
+   |                      |
+   v                      v
+GRAPH                  VECTOR
+   |                      |
+   v                      v
+financial facts      filing narrative
+   |
+   v
+deterministic
+calculation
+   |                      |
+   +----------+-----------+
+              |
+              v
+       canonical evidence
+              |
+              v
+      grounded synthesis
+```
+
+The numerical result is deterministic.
+
+The narrative explanation is grounded in retrieved filing evidence.
+
+The LLM is responsible for combining the evidence into readable language, not recomputing the number.
+
+## Why not let the LLM calculate
+
+Allowing the LLM to perform authoritative arithmetic would introduce unnecessary risks:
+
+- arithmetic errors;
+- inconsistent rounding;
+- hidden intermediate steps;
+- unreproducible calculations;
+- difficulty testing edge cases;
+- difficulty separating retrieval failures from arithmetic failures.
+
+The calculation itself is deterministic and should therefore be implemented as deterministic software.
+
+## Why not calculate from narrative text
+
+Financial calculations should use normalized structured facts whenever the required values are available.
+
+Extracting numbers from narrative chunks would add unnecessary uncertainty around:
+
+```text
+which value was selected
+which unit applies
+which period applies
+whether the value is duplicated
+whether the value refers to the requested metric
+```
+
+The graph and financial-fact model provide a more reliable source for supported structured calculations.
+
+## Error behavior
+
+The calculation layer should fail explicitly when the required operands are not valid.
+
+Examples include:
+
+```text
+missing starting value
+missing ending value
+zero denominator
+unsupported calculation
+period mismatch
+invalid numerical representation
+```
+
+The system should not fabricate a result simply because the user's question implies that a calculation is expected.
+
+## Testing consequences
+
+Calculation logic should be testable independently from:
+
+```text
+LLM routing
+Text-to-Cypher generation
+retrieval
+answer synthesis
+provider availability
+```
+
+This makes arithmetic failures easier to diagnose.
+
+A deterministic calculation test can validate:
+
+```text
+input operands
+operation
+expected numerical result
+rounding behavior
+invalid-input behavior
+```
+
+without invoking an LLM.
+
+## Evaluation consequences
+
+End-to-end answer evaluation can verify whether the final response uses the correct deterministic result.
+
+However, calculation correctness should also be tested directly.
+
+This layered evaluation prevents a correct answer string from hiding incorrect internal arithmetic behavior.
+
+## Consequences
+
+This decision introduces a dedicated calculation layer and structured calculation objects.
+
+The application must maintain:
+
+- supported-operation definitions;
+- operand validation;
+- temporal alignment;
+- deterministic formulas;
+- precision handling;
+- calculation tests;
+- evidence integration.
+
+The benefit is that financial arithmetic becomes:
+
+```text
+reproducible
+auditable
+testable
+traceable
+independent of model behavior
+```
+
+## Rejected alternatives
+
+### Let the LLM perform arithmetic
+
+Rejected because deterministic arithmetic does not benefit from probabilistic generation.
+
+### Ask the LLM to generate Python dynamically
+
+Rejected because the supported financial operations are small, known, and safer to implement explicitly.
+
+Dynamic code generation would introduce unnecessary execution and security complexity.
+
+### Calculate directly from retrieved prose
+
+Rejected because normalized financial facts provide clearer metric, period, and provenance semantics.
+
+### Store only the final numerical result
+
+Rejected because preserving operands and period context improves auditability and grounded synthesis.
+
+## Reconsider when
+
+This decision should be revisited if:
+
+- substantially more complex financial modelling is added;
+- calculations require a dedicated analytical engine;
+- multi-currency normalization becomes part of the project;
+- accounting-standard-specific transformations require a richer calculation framework;
+- supported analytical expressions become large enough to justify a formal expression language.
+
+Even in those cases, deterministic execution should remain preferred over free-form LLM arithmetic.

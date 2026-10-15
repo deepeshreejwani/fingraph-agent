@@ -1,0 +1,243 @@
+{
+  "benchmark": "graph_self_healing",
+  "cases": [
+    {
+      "added_latency_ms": 28225.768,
+      "baseline": {
+        "error": "Unknown relationship type(s): BROKEN_RELATIONSHIP",
+        "failure_type": "validation_error",
+        "latency_ms": 1.745,
+        "row_count": 0,
+        "success": false,
+        "total_latency_ms": 16693.047
+      },
+      "fault_type": "invalid_relationship",
+      "id": "invalid_relationship_msft_revenue",
+      "initial_generation_ms": 16691.302,
+      "question": "What was Microsoft's revenue in fiscal 2026?",
+      "recovered": true,
+      "self_healing": {
+        "attempts": 2,
+        "error": null,
+        "failure_type": null,
+        "final_cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\n    'RevenueFromContractWithCustomerExcludingAssessedTax',\n    'Revenues',\n    'SalesRevenueNet'\n]\n  AND period.period_year = toInteger($year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period,\n     collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+        "latency_ms": 28227.513,
+        "repair_attempts": 1,
+        "repair_usage": {
+          "cached_input_tokens": 0,
+          "cost_usd": 0.001,
+          "cost_usd_precise": 0.0007093500000000001,
+          "input_tokens": 3225,
+          "output_tokens": 376,
+          "total_tokens": 3601
+        },
+        "row_count": 1,
+        "success": true,
+        "total_latency_ms": 44918.815
+      }
+    },
+    {
+      "added_latency_ms": 1511.866,
+      "baseline": {
+        "error": "Unknown property/properties for node label 'FiscalPeriod': definitely_not_a_property",
+        "failure_type": "validation_error",
+        "latency_ms": 1.386,
+        "row_count": 0,
+        "success": false,
+        "total_latency_ms": 1516.265
+      },
+      "fault_type": "invalid_property",
+      "id": "invalid_property_msft_revenue_range",
+      "initial_generation_ms": 1514.879,
+      "question": "What was Microsoft's revenue from 2024 to 2026?",
+      "recovered": true,
+      "self_healing": {
+        "attempts": 2,
+        "error": null,
+        "failure_type": null,
+        "final_cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\n    'RevenueFromContractWithCustomerExcludingAssessedTax',\n    'Revenues',\n    'SalesRevenueNet'\n]\n  AND period.period_year >= toInteger($start_year)\n  AND period.period_year <= toInteger($end_year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period,\n     collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+        "latency_ms": 1513.252,
+        "repair_attempts": 1,
+        "repair_usage": {
+          "cached_input_tokens": 0,
+          "cost_usd": 0.001,
+          "cost_usd_precise": 0.0007425,
+          "input_tokens": 3246,
+          "output_tokens": 426,
+          "total_tokens": 3672
+        },
+        "row_count": 3,
+        "success": true,
+        "total_latency_ms": 3028.131
+      }
+    },
+    {
+      "added_latency_ms": 1187.615,
+      "baseline": {
+        "error": "{neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'THIS': expected ',', 'GROUP BY', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FILTER', 'FINISH', 'FOR', 'FOREACH', 'INSERT', 'LET', 'LIMIT', 'MATCH', 'MERGE', 'NEXT', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SHOW', 'SKIP', 'TERMINATE', 'UNION', 'UNWIND', 'USE', 'WITH' or <EOF> (line 24, column 1 (offset: 883))\n\"THIS IS NOT VALID CYPHER\"\n ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}",
+        "failure_type": "neo4j_error",
+        "latency_ms": 45.031,
+        "row_count": 0,
+        "success": false,
+        "total_latency_ms": 1245.569
+      },
+      "fault_type": "syntax_corruption",
+      "id": "syntax_corruption_nvda_net_income",
+      "initial_generation_ms": 1200.538,
+      "question": "What was NVIDIA net income in fiscal 2026?",
+      "recovered": true,
+      "self_healing": {
+        "attempts": 2,
+        "error": null,
+        "failure_type": null,
+        "final_cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\"NetIncomeLoss\", \"ProfitLoss\"]\n  AND period.period_year = toInteger($year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period, collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+        "latency_ms": 1232.646,
+        "repair_attempts": 1,
+        "repair_usage": {
+          "cached_input_tokens": 0,
+          "cost_usd": 0.001,
+          "cost_usd_precise": 0.00072195,
+          "input_tokens": 3389,
+          "output_tokens": 356,
+          "total_tokens": 3745
+        },
+        "row_count": 1,
+        "success": true,
+        "total_latency_ms": 2433.184
+      }
+    },
+    {
+      "added_latency_ms": 1439.632,
+      "baseline": {
+        "error": "Query executed successfully but returned zero rows.",
+        "failure_type": "empty_result",
+        "latency_ms": 154.679,
+        "row_count": 0,
+        "success": false,
+        "total_latency_ms": 1398.095
+      },
+      "fault_type": "wrong_entity_alias",
+      "id": "wrong_entity_alias_nvda_net_income",
+      "initial_generation_ms": 1243.416,
+      "question": "What was NVIDIA net income in fiscal 2025?",
+      "recovered": true,
+      "self_healing": {
+        "attempts": 2,
+        "error": null,
+        "failure_type": null,
+        "final_cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\n    'NetIncomeLoss',\n    'ProfitLoss'\n]\n  AND period.period_year = toInteger($year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period,\n     collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+        "latency_ms": 1594.311,
+        "repair_attempts": 1,
+        "repair_usage": {
+          "cached_input_tokens": 0,
+          "cost_usd": 0.001,
+          "cost_usd_precise": 0.0007275000000000001,
+          "input_tokens": 3322,
+          "output_tokens": 382,
+          "total_tokens": 3704
+        },
+        "row_count": 1,
+        "success": true,
+        "total_latency_ms": 2837.727
+      }
+    },
+    {
+      "added_latency_ms": 1275.569,
+      "baseline": {
+        "error": "Generated Cypher contains a forbidden clause matching: \\bDELETE\\b",
+        "failure_type": "validation_error",
+        "latency_ms": 0.24,
+        "row_count": 0,
+        "success": false,
+        "total_latency_ms": 1430.079
+      },
+      "fault_type": "unsafe_query",
+      "id": "unsafe_query_msft_net_income",
+      "initial_generation_ms": 1429.839,
+      "question": "What was Microsoft's net income in fiscal 2026?",
+      "recovered": true,
+      "self_healing": {
+        "attempts": 2,
+        "error": null,
+        "failure_type": null,
+        "final_cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\n    'NetIncomeLoss',\n    'ProfitLoss'\n]\n  AND period.period_year = toInteger($year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period, collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+        "latency_ms": 1275.809,
+        "repair_attempts": 1,
+        "repair_usage": {
+          "cached_input_tokens": 2816,
+          "cost_usd": 0.0,
+          "cost_usd_precise": 0.00048705,
+          "input_tokens": 3215,
+          "output_tokens": 360,
+          "total_tokens": 3575
+        },
+        "row_count": 1,
+        "success": true,
+        "total_latency_ms": 2705.648
+      }
+    },
+    {
+      "added_latency_ms": 1536.982,
+      "baseline": {
+        "error": "Query executed successfully but returned zero rows.",
+        "failure_type": "empty_result",
+        "latency_ms": 141.035,
+        "row_count": 0,
+        "success": false,
+        "total_latency_ms": 1441.084
+      },
+      "fault_type": "empty_result",
+      "id": "empty_result_nvda_revenue",
+      "initial_generation_ms": 1300.049,
+      "question": "What was NVIDIA revenue in fiscal 2026?",
+      "recovered": true,
+      "self_healing": {
+        "attempts": 2,
+        "error": null,
+        "failure_type": null,
+        "final_cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\n    value IN $revenue_concepts | value\n]\n  AND period.period_year = toInteger($year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period,\n     collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+        "latency_ms": 1678.017,
+        "repair_attempts": 1,
+        "repair_usage": {
+          "cached_input_tokens": 0,
+          "cost_usd": 0.001,
+          "cost_usd_precise": 0.0007687500000000001,
+          "input_tokens": 3321,
+          "output_tokens": 451,
+          "total_tokens": 3772
+        },
+        "row_count": 1,
+        "success": true,
+        "total_latency_ms": 2978.066
+      }
+    }
+  ],
+  "methodology": {
+    "baseline": "One deterministic fault-injected Cypher attempt with no repair.",
+    "max_attempts": 2,
+    "max_rows": 25,
+    "self_healing": "The same injected first plan executed through GraphQAService with its real bounded repair path.",
+    "state_db": "data/state/graph_repair_benchmark.db",
+    "token_cost_note": "Repair token counts come from Groq completion usage. Cost uses the pinned GPT-OSS 120B pricing snapshot in fingraph.llm.usage, including cached-input pricing."
+  },
+  "status": "complete",
+  "summary": {
+    "average_repair_attempts": 1.0,
+    "average_repair_attempts_recovered": 1.0,
+    "baseline_failures": 6,
+    "faulted_first_pass_success_rate": 0.0,
+    "final_success_rate": 1.0,
+    "mean_added_latency_ms": 5862.905,
+    "recovered_cases": 6,
+    "recovery_rate": 1.0,
+    "token_cost": {
+      "added_cached_input_tokens": 2816,
+      "added_cost_usd": 0.004,
+      "added_input_tokens": 19718,
+      "added_output_tokens": 2351,
+      "added_total_tokens": 22069,
+      "status": "instrumented"
+    },
+    "total_cases": 6
+  }
+}

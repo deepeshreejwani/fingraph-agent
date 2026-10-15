@@ -1,0 +1,153 @@
+{
+  "benchmark": "fingraph_api_locust",
+  "benchmark_mode": "warm_resumable_production_path",
+  "cache_semantics": {
+    "note": "Formal concurrent load results represent the production resumable/cache-enabled path. They must not be presented as cold LLM-provider latency.",
+    "warm_resumable": true
+  },
+  "metric_semantics": {
+    "stream_completed": "End-to-end client latency from POST /ask/stream start through receipt of the validated SSE completed event.",
+    "stream_open": "HTTP streaming-response opening latency only. Diagnostic metric; not end-to-end stream latency.",
+    "sync": "End-to-end client latency for POST /ask through receipt of the validated JSON response.",
+    "ttft": "Elapsed client time from POST /ask/stream start until validated answer text first becomes available to the client."
+  },
+  "routes": {
+    "graph": {
+      "diagnostics": {
+        "stream_open": {
+          "error_rate": 0.0,
+          "failures": 0,
+          "latency_ms_mean": 4.764,
+          "latency_ms_p50": 4.0,
+          "latency_ms_p95": 7.0,
+          "latency_ms_p99": 24.0,
+          "requests": 4522,
+          "requests_per_second": 155.842
+        }
+      },
+      "stream_completed": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 25.626,
+        "latency_ms_p50": 23.0,
+        "latency_ms_p95": 45.0,
+        "latency_ms_p99": 63.0,
+        "requests": 4522,
+        "requests_per_second": 155.842
+      },
+      "sync": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 23.249,
+        "latency_ms_p50": 21.0,
+        "latency_ms_p95": 42.0,
+        "latency_ms_p99": 58.0,
+        "requests": 4977,
+        "requests_per_second": 171.517
+      },
+      "ttft": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 25.592,
+        "latency_ms_p50": 23.0,
+        "latency_ms_p95": 45.0,
+        "latency_ms_p99": 63.0,
+        "requests": 4522,
+        "requests_per_second": 155.842
+      }
+    },
+    "hybrid": {
+      "diagnostics": {
+        "stream_open": {
+          "error_rate": 0.0,
+          "failures": 0,
+          "latency_ms_mean": 7.371,
+          "latency_ms_p50": 7.0,
+          "latency_ms_p95": 12.0,
+          "latency_ms_p99": 27.0,
+          "requests": 1627,
+          "requests_per_second": 56.023
+        }
+      },
+      "stream_completed": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 71.304,
+        "latency_ms_p50": 67.0,
+        "latency_ms_p95": 100.0,
+        "latency_ms_p99": 140.0,
+        "requests": 1627,
+        "requests_per_second": 56.023
+      },
+      "sync": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 65.918,
+        "latency_ms_p50": 63.0,
+        "latency_ms_p95": 91.0,
+        "latency_ms_p99": 120.0,
+        "requests": 1757,
+        "requests_per_second": 60.468
+      },
+      "ttft": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 71.254,
+        "latency_ms_p50": 67.0,
+        "latency_ms_p95": 100.0,
+        "latency_ms_p99": 140.0,
+        "requests": 1627,
+        "requests_per_second": 56.023
+      }
+    },
+    "vector": {
+      "diagnostics": {
+        "stream_open": {
+          "error_rate": 0.0,
+          "failures": 0,
+          "latency_ms_mean": 6.815,
+          "latency_ms_p50": 6.0,
+          "latency_ms_p95": 11.0,
+          "latency_ms_p99": 26.0,
+          "requests": 2520,
+          "requests_per_second": 86.844
+        }
+      },
+      "stream_completed": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 45.961,
+        "latency_ms_p50": 44.0,
+        "latency_ms_p95": 65.0,
+        "latency_ms_p99": 81.0,
+        "requests": 2520,
+        "requests_per_second": 86.844
+      },
+      "sync": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 48.135,
+        "latency_ms_p50": 44.0,
+        "latency_ms_p95": 78.0,
+        "latency_ms_p99": 120.0,
+        "requests": 2405,
+        "requests_per_second": 82.818
+      },
+      "ttft": {
+        "error_rate": 0.0,
+        "failures": 0,
+        "latency_ms_mean": 45.911,
+        "latency_ms_p50": 44.0,
+        "latency_ms_p95": 65.0,
+        "latency_ms_p99": 81.0,
+        "requests": 2520,
+        "requests_per_second": 86.844
+      }
+    }
+  },
+  "ttft_semantics": {
+    "buffered_structured_output": true,
+    "definition": "Elapsed client time from request start until validated answer text first becomes available in the SSE completed event.",
+    "expected_relationship": "TTFT and stream-completed latency are expected to be nearly equal because FinGraph exposes answer text only after strict structured synthesis and validation complete."
+  }
+}

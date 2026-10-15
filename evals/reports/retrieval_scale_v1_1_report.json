@@ -1,0 +1,1930 @@
+{
+  "dataset": "evals/datasets/retrieval_bootstrap.json",
+  "dataset_judgment_counts": {
+    "explicit_chunk_qrels": 0,
+    "metadata_bootstrap": 12
+  },
+  "details": {
+    "dense": [
+      {
+        "id": "ret-001",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 129.22987493220717,
+        "mrr": 0.25,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "What supply chain and manufacturing concentration risks does NVIDIA describe?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7efdd0b1fbd3a86f524c528b",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 0.82584053,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_8cc9b5fdf927d7a2cb601db0",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.8187789,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_9ab543a60d6fef7c8385d02b",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 0.8132621,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_93486008737ba3e138918707",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 0.81301653,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_f340bb2bc93683a091f6372a",
+            "fiscal_year": 2023,
+            "rank": 5,
+            "score": 0.8118527,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          }
+        ]
+      },
+      {
+        "id": "ret-002",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 11.95337506942451,
+        "mrr": 0.5,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "How does NVIDIA describe dependency on third-party manufacturers and suppliers?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7e9d406473ad6514f1a4b3aa",
+            "fiscal_year": 2023,
+            "rank": 1,
+            "score": 0.7955075,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_fed59cc3fe4cad41f5e1962c",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 0.7801265,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_d6b28f9aa84184daaf8812cc",
+            "fiscal_year": 2020,
+            "rank": 3,
+            "score": 0.7793909,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_f340bb2bc93683a091f6372a",
+            "fiscal_year": 2023,
+            "rank": 4,
+            "score": 0.77272403,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_3ff00ec7a706b4bf981258cf",
+            "fiscal_year": 2026,
+            "rank": 5,
+            "score": 0.7691859,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          }
+        ]
+      },
+      {
+        "id": "ret-003",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 9.51641600113362,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "What foreign exchange and interest rate risks does Apple report?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_ac8edd92ee340409029ae84e",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 0.8263168,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_aec874e8dad2a159d5f3b537",
+            "fiscal_year": 2021,
+            "rank": 2,
+            "score": 0.8150691,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_6f191bad0c5bb5384225db49",
+            "fiscal_year": 2020,
+            "rank": 3,
+            "score": 0.81123114,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_7841b16627c9007d2fec5f9d",
+            "fiscal_year": 2018,
+            "rank": 4,
+            "score": 0.8099796,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_7cb994de2b13ff9342746bea",
+            "fiscal_year": 2019,
+            "rank": 5,
+            "score": 0.8093499,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          }
+        ]
+      },
+      {
+        "id": "ret-004",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 7.913041044957936,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Amazon describe AWS customers and enterprise services?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_8e4e6701e14a32e83e3e6c1d",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 0.7705741,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_5cc7fd5c8dd845b57e8141b7",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.7705741,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_774f6e85c1f85cc59239443c",
+            "fiscal_year": 2023,
+            "rank": 3,
+            "score": 0.7693621,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_0846fbdbf6140e131916e00c",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 0.76856047,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_a18aba6f5398b523c7085f66",
+            "fiscal_year": 2021,
+            "rank": 5,
+            "score": 0.76595855,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          }
+        ]
+      },
+      {
+        "id": "ret-005",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 6.9199580466374755,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "What competitive risks does Amazon associate with artificial intelligence?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_794bf072ea73c715eab967a2",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.77001786,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_20d0d9286c4b3d9267ed22ba",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.7598791,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_6c3cc6d68f4c6cfc0c959078",
+            "fiscal_year": 2022,
+            "rank": 3,
+            "score": 0.74404883,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_c3d835becb72d9aadcfacba7",
+            "fiscal_year": 2024,
+            "rank": 4,
+            "score": 0.7391324,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_4de8cf5d7313618a39824448",
+            "fiscal_year": 2023,
+            "rank": 5,
+            "score": 0.73229307,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          }
+        ]
+      },
+      {
+        "id": "ret-006",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 9.509042021818459,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.8,
+        "question": "How does Alphabet describe competition and investment in artificial intelligence?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_caca4b839d7362f58a75e930",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.7964849,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_2f34a5a2325bc60f0323bf12",
+            "fiscal_year": 2019,
+            "rank": 2,
+            "score": 0.7676507,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_4a975ee9bf6e8f9e5cf5a18f",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 0.7616731,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_4b414c7a861bba44ddac87d7",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 0.75692856,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_7ab58cfa9745f08ea7c22688",
+            "fiscal_year": 2025,
+            "rank": 5,
+            "score": 0.755763,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          }
+        ]
+      },
+      {
+        "id": "ret-007",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 9.560791891999543,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.8,
+        "question": "What risks does Meta describe around artificial intelligence infrastructure and competition?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_67afb85fa761d94a83a5b374",
+            "fiscal_year": 2023,
+            "rank": 1,
+            "score": 0.7844551,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_e42feeee0d8bc93eebf97689",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.77833885,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_2aada234dedc26a9db4a8ac0",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 0.77816516,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_dae8b77c2853855e2d4953df",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 0.7663584,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_b089cb99fb1baf3a37cf0d40",
+            "fiscal_year": 2025,
+            "rank": 5,
+            "score": 0.76263463,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          }
+        ]
+      },
+      {
+        "id": "ret-008",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 12.83637504093349,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.8,
+        "question": "How does Microsoft describe competition in artificial intelligence products and platforms?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_3f3492fbd187bfd9d28879ba",
+            "fiscal_year": 2026,
+            "rank": 1,
+            "score": 0.8214813,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_6bbbb349e2eeedc710da8b0e",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.8084988,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_2eb2827b0398c6707e316bbf",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 0.80649126,
+            "section_name": "Item 7. MD&A",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_c6860b65c2e55219883f1e6b",
+            "fiscal_year": 2023,
+            "rank": 4,
+            "score": 0.8058965,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_769ff7285443e1b228c03841",
+            "fiscal_year": 2024,
+            "rank": 5,
+            "score": 0.8036771,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          }
+        ]
+      },
+      {
+        "id": "ret-009",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 7.099917042069137,
+        "mrr": 0.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.0,
+        "question": "What market risks does Microsoft report?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_2e68d834a50e38529526ad35",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 0.762197,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_0360ec166c0672f60bfae1f1",
+            "fiscal_year": 2021,
+            "rank": 2,
+            "score": 0.7518724,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_cf2c557570a0357b34ae5a33",
+            "fiscal_year": 2023,
+            "rank": 3,
+            "score": 0.7516503,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_79978bd15482d5ef9ac215a8",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 0.74303323,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_81cff0ae383dfb2bc591649b",
+            "fiscal_year": 2019,
+            "rank": 5,
+            "score": 0.73768073,
+            "section_name": "Item 7. MD&A",
+            "ticker": "MSFT"
+          }
+        ]
+      },
+      {
+        "id": "ret-010",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 9.6764579648152,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "What does Apple say about its business products, services, and markets?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_14b1a235a270e84dc724e941",
+            "fiscal_year": 2023,
+            "rank": 1,
+            "score": 0.7742883,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_52466207d7945cf9d3939a44",
+            "fiscal_year": 2022,
+            "rank": 2,
+            "score": 0.7714912,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_c056be1ebd469aa96a84c6ce",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 0.76671964,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_52518bd8ba0bfe3546b7b001",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 0.7657079,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_896c615f0321764c25847529",
+            "fiscal_year": 2018,
+            "rank": 5,
+            "score": 0.76486987,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          }
+        ]
+      },
+      {
+        "id": "ret-011",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 6.2350829830393195,
+        "mrr": 0.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.0,
+        "question": "How does Meta discuss business investment and operating expenses?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_81f336181f868ea5142a9500",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 0.7336935,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_e6ec798801d8ffc2f6085d80",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.72874,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_06217e913123af57de6494cd",
+            "fiscal_year": 2022,
+            "rank": 3,
+            "score": 0.7270731,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_10eb256a73f7710a4365807e",
+            "fiscal_year": 2024,
+            "rank": 4,
+            "score": 0.71068543,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_4489789f6481926957df28a1",
+            "fiscal_year": 2021,
+            "rank": 5,
+            "score": 0.70873797,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          }
+        ]
+      },
+      {
+        "id": "ret-012",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 6.272207945585251,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Alphabet discuss financial condition and results of operations?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7ab58cfa9745f08ea7c22688",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.80348694,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_31540ba299550755fcd79a1d",
+            "fiscal_year": 2022,
+            "rank": 2,
+            "score": 0.8012864,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_536539eb1c29f0b767bbe7f8",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 0.80023617,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_273e6fa8bc2d20697ec31767",
+            "fiscal_year": 2023,
+            "rank": 4,
+            "score": 0.79953194,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_c1ab4ea2eaeae3647a0165c1",
+            "fiscal_year": 2021,
+            "rank": 5,
+            "score": 0.78825974,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          }
+        ]
+      }
+    ],
+    "hybrid": [
+      {
+        "id": "ret-001",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 36.85412497725338,
+        "mrr": 0.2,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "What supply chain and manufacturing concentration risks does NVIDIA describe?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7efdd0b1fbd3a86f524c528b",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 0.03278688524590164,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_8cc9b5fdf927d7a2cb601db0",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.03200204813108039,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_9ab543a60d6fef7c8385d02b",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 0.030798389007344232,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_f340bb2bc93683a091f6372a",
+            "fiscal_year": 2023,
+            "rank": 4,
+            "score": 0.03076923076923077,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_fed59cc3fe4cad41f5e1962c",
+            "fiscal_year": 2023,
+            "rank": 5,
+            "score": 0.029857397504456328,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          }
+        ]
+      },
+      {
+        "id": "ret-002",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 33.41404197271913,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "How does NVIDIA describe dependency on third-party manufacturers and suppliers?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_fed59cc3fe4cad41f5e1962c",
+            "fiscal_year": 2023,
+            "rank": 1,
+            "score": 0.03252247488101534,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_7efdd0b1fbd3a86f524c528b",
+            "fiscal_year": 2024,
+            "rank": 2,
+            "score": 0.030330882352941176,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_7e9d406473ad6514f1a4b3aa",
+            "fiscal_year": 2023,
+            "rank": 3,
+            "score": 0.02938045560996381,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_8cc9b5fdf927d7a2cb601db0",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 0.029273504273504274,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_d6b28f9aa84184daaf8812cc",
+            "fiscal_year": 2020,
+            "rank": 5,
+            "score": 0.028531243721117136,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          }
+        ]
+      },
+      {
+        "id": "ret-003",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 13.989500002935529,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "What foreign exchange and interest rate risks does Apple report?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_ac8edd92ee340409029ae84e",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 0.03177805800756621,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_aec874e8dad2a159d5f3b537",
+            "fiscal_year": 2021,
+            "rank": 2,
+            "score": 0.031754032258064516,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_6f191bad0c5bb5384225db49",
+            "fiscal_year": 2020,
+            "rank": 3,
+            "score": 0.03057889822595705,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_7841b16627c9007d2fec5f9d",
+            "fiscal_year": 2018,
+            "rank": 4,
+            "score": 0.03055037313432836,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_7cb994de2b13ff9342746bea",
+            "fiscal_year": 2019,
+            "rank": 5,
+            "score": 0.030536130536130537,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          }
+        ]
+      },
+      {
+        "id": "ret-004",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 12.79333303682506,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Amazon describe AWS customers and enterprise services?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_8e4e6701e14a32e83e3e6c1d",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 0.032018442622950824,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_774f6e85c1f85cc59239443c",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 0.03200204813108039,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_5cc7fd5c8dd845b57e8141b7",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 0.03200204813108039,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_a18aba6f5398b523c7085f66",
+            "fiscal_year": 2021,
+            "rank": 4,
+            "score": 0.03177805800756621,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_0846fbdbf6140e131916e00c",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 0.031009615384615385,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          }
+        ]
+      },
+      {
+        "id": "ret-005",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 12.860250077210367,
+        "mrr": 0.5,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.4,
+        "question": "What competitive risks does Amazon associate with artificial intelligence?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_20d0d9286c4b3d9267ed22ba",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.03252247488101534,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_794bf072ea73c715eab967a2",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 0.03047794966520434,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_91f8e35c40674ef0a40fefb6",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 0.027984344422700584,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_72075a1119a36ab83d27086c",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 0.02758751902587519,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_c88b3633a5cd3cd32229cb8c",
+            "fiscal_year": 2025,
+            "rank": 5,
+            "score": 0.02531645569620253,
+            "section_name": "Item 7. MD&A",
+            "ticker": "AMZN"
+          }
+        ]
+      },
+      {
+        "id": "ret-006",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 13.639124925248325,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Alphabet describe competition and investment in artificial intelligence?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_5e0daa9c827d0a1b369d38f2",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.029877369007803793,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_9ffa4023dceae28200d7d5b1",
+            "fiscal_year": 2020,
+            "rank": 2,
+            "score": 0.027425373134328357,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_00e8c6037254af6c961e712b",
+            "fiscal_year": 2019,
+            "rank": 3,
+            "score": 0.027106227106227107,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_1f36b79371df2f0a23a80c67",
+            "fiscal_year": 2023,
+            "rank": 4,
+            "score": 0.026875901875901876,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_c158e6d9e8d40966cd3a86f7",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          }
+        ]
+      },
+      {
+        "id": "ret-007",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 14.22654208727181,
+        "mrr": 0.3333333333333333,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.6,
+        "question": "What risks does Meta describe around artificial intelligence infrastructure and competition?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_b089cb99fb1baf3a37cf0d40",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.031009615384615385,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_10eb256a73f7710a4365807e",
+            "fiscal_year": 2024,
+            "rank": 2,
+            "score": 0.030798389007344232,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_d760224150a5cb53730f92bb",
+            "fiscal_year": 2023,
+            "rank": 3,
+            "score": 0.028991596638655463,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_c585305632d0f6caa8d1b0df",
+            "fiscal_year": 2024,
+            "rank": 4,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_67afb85fa761d94a83a5b374",
+            "fiscal_year": 2023,
+            "rank": 5,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          }
+        ]
+      },
+      {
+        "id": "ret-008",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 16.280791023746133,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Microsoft describe competition in artificial intelligence products and platforms?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7be97088a50cc55520d44f44",
+            "fiscal_year": 2019,
+            "rank": 1,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_3f3492fbd187bfd9d28879ba",
+            "fiscal_year": 2026,
+            "rank": 2,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_f42fbefd5cfb45a6bdf40df1",
+            "fiscal_year": 2021,
+            "rank": 3,
+            "score": 0.016129032258064516,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_6bbbb349e2eeedc710da8b0e",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 0.016129032258064516,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_ba54d96aa0f6daf06d9f1ba8",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 0.015873015873015872,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          }
+        ]
+      },
+      {
+        "id": "ret-009",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 12.902749935165048,
+        "mrr": 0.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.0,
+        "question": "What market risks does Microsoft report?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_047bbb3ae12c1a5c6c9927f9",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 0.02817460317460317,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_f73144a740df72a0ef319d01",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_2e68d834a50e38529526ad35",
+            "fiscal_year": 2022,
+            "rank": 3,
+            "score": 0.01639344262295082,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_2c368813c709df8516d9b6bb",
+            "fiscal_year": 2026,
+            "rank": 4,
+            "score": 0.016129032258064516,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_0360ec166c0672f60bfae1f1",
+            "fiscal_year": 2021,
+            "rank": 5,
+            "score": 0.016129032258064516,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          }
+        ]
+      },
+      {
+        "id": "ret-010",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 12.816415983252227,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "What does Apple say about its business products, services, and markets?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_52466207d7945cf9d3939a44",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 0.031754032258064516,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_14b1a235a270e84dc724e941",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 0.03131881575727918,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_0345ebb5a4166efb5d3aef40",
+            "fiscal_year": 2021,
+            "rank": 3,
+            "score": 0.031054405392392875,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_fcf4d8f47d4a7ada8735ed37",
+            "fiscal_year": 2020,
+            "rank": 4,
+            "score": 0.030886196246139225,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_896c615f0321764c25847529",
+            "fiscal_year": 2018,
+            "rank": 5,
+            "score": 0.030536130536130537,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          }
+        ]
+      },
+      {
+        "id": "ret-011",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 13.730750069953501,
+        "mrr": 0.2,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "How does Meta discuss business investment and operating expenses?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_10eb256a73f7710a4365807e",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 0.03055037313432836,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_81f336181f868ea5142a9500",
+            "fiscal_year": 2022,
+            "rank": 2,
+            "score": 0.02889344262295082,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_1bba4c68a25af907f76e8647",
+            "fiscal_year": 2023,
+            "rank": 3,
+            "score": 0.02819138376017471,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_b089cb99fb1baf3a37cf0d40",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 0.02694394213381555,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_0afda9ef58ee0d2408f0d1e1",
+            "fiscal_year": 2024,
+            "rank": 5,
+            "score": 0.01639344262295082,
+            "section_name": "Item 7. MD&A",
+            "ticker": "META"
+          }
+        ]
+      },
+      {
+        "id": "ret-012",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 12.942458037286997,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Alphabet discuss financial condition and results of operations?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7ab58cfa9745f08ea7c22688",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 0.03278688524590164,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_273e6fa8bc2d20697ec31767",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 0.031754032258064516,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_31540ba299550755fcd79a1d",
+            "fiscal_year": 2022,
+            "rank": 3,
+            "score": 0.031754032258064516,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_536539eb1c29f0b767bbe7f8",
+            "fiscal_year": 2024,
+            "rank": 4,
+            "score": 0.031746031746031744,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_c1ab4ea2eaeae3647a0165c1",
+            "fiscal_year": 2021,
+            "rank": 5,
+            "score": 0.03076923076923077,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          }
+        ]
+      }
+    ],
+    "sparse": [
+      {
+        "id": "ret-001",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 60.68845803383738,
+        "mrr": 0.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.0,
+        "question": "What supply chain and manufacturing concentration risks does NVIDIA describe?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7efdd0b1fbd3a86f524c528b",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 16.065002,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_6be84b864d847e9afb4613f9",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 15.524753,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_8cc9b5fdf927d7a2cb601db0",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 14.435683,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_8d90c350287f62c2ae9c33df",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 14.130382,
+            "section_name": "Item 1. Business",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_f340bb2bc93683a091f6372a",
+            "fiscal_year": 2023,
+            "rank": 5,
+            "score": 13.21119,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          }
+        ]
+      },
+      {
+        "id": "ret-002",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 14.488084008917212,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.6,
+        "question": "How does NVIDIA describe dependency on third-party manufacturers and suppliers?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_fed59cc3fe4cad41f5e1962c",
+            "fiscal_year": 2023,
+            "rank": 1,
+            "score": 13.269885,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_785cad5edf214e6c511a2215",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 12.352556,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_b78e000aadf9611069e58248",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 11.316718,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_7efdd0b1fbd3a86f524c528b",
+            "fiscal_year": 2024,
+            "rank": 4,
+            "score": 10.7802515,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          },
+          {
+            "chunk_id": "chunk_8cc9b5fdf927d7a2cb601db0",
+            "fiscal_year": 2025,
+            "rank": 5,
+            "score": 10.697337,
+            "section_name": "Item 7. MD&A",
+            "ticker": "NVDA"
+          }
+        ]
+      },
+      {
+        "id": "ret-003",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 13.620208017528057,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "What foreign exchange and interest rate risks does Apple report?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_2450cd758cd4f0bc4ef425c6",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 14.718916,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_dc0b982fbd6f35e192b5f7d8",
+            "fiscal_year": 2024,
+            "rank": 2,
+            "score": 14.718915,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_1c8e084bfe7b0e8034fca694",
+            "fiscal_year": 2023,
+            "rank": 3,
+            "score": 14.711901,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_aec874e8dad2a159d5f3b537",
+            "fiscal_year": 2021,
+            "rank": 4,
+            "score": 14.123444,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_ac8edd92ee340409029ae84e",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 14.12101,
+            "section_name": "Item 7A. Market Risk",
+            "ticker": "AAPL"
+          }
+        ]
+      },
+      {
+        "id": "ret-004",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 3.239540965296328,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Amazon describe AWS customers and enterprise services?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_a18aba6f5398b523c7085f66",
+            "fiscal_year": 2021,
+            "rank": 1,
+            "score": 14.639715,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_774f6e85c1f85cc59239443c",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 14.147675,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_8e4e6701e14a32e83e3e6c1d",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 14.137169,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_5cc7fd5c8dd845b57e8141b7",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 14.137169,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_0846fbdbf6140e131916e00c",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 14.133757,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          }
+        ]
+      },
+      {
+        "id": "ret-005",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 3.7825409090146422,
+        "mrr": 0.5,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.6,
+        "question": "What competitive risks does Amazon associate with artificial intelligence?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_20d0d9286c4b3d9267ed22ba",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 13.147007,
+            "section_name": "Item 1. Business",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_5ba1e623c526c80952200763",
+            "fiscal_year": 2022,
+            "rank": 2,
+            "score": 11.855384,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_caef51d5782ca24e0f1ecdb4",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 11.661247,
+            "section_name": "Item 7. MD&A",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_6eefa75b267745244f5112c1",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 11.3123455,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "AMZN"
+          },
+          {
+            "chunk_id": "chunk_5c4982de10edaec175b8ad02",
+            "fiscal_year": 2023,
+            "rank": 5,
+            "score": 10.663538,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "AMZN"
+          }
+        ]
+      },
+      {
+        "id": "ret-006",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 3.196250065229833,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Alphabet describe competition and investment in artificial intelligence?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_c158e6d9e8d40966cd3a86f7",
+            "fiscal_year": 2022,
+            "rank": 1,
+            "score": 10.309974,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_9bdae488330adc3ce051c1b5",
+            "fiscal_year": 2021,
+            "rank": 2,
+            "score": 10.309974,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_4d1d56fd57760827540850c2",
+            "fiscal_year": 2020,
+            "rank": 3,
+            "score": 10.123534,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_c732ff89a7dc5e26f918e175",
+            "fiscal_year": 2018,
+            "rank": 4,
+            "score": 10.043601,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_5e0daa9c827d0a1b369d38f2",
+            "fiscal_year": 2025,
+            "rank": 5,
+            "score": 9.41791,
+            "section_name": "Item 1. Business",
+            "ticker": "GOOGL"
+          }
+        ]
+      },
+      {
+        "id": "ret-007",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 2.9762499034404755,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.4,
+        "question": "What risks does Meta describe around artificial intelligence infrastructure and competition?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_c585305632d0f6caa8d1b0df",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 14.449686,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_24085602734fbc474f5905bc",
+            "fiscal_year": 2025,
+            "rank": 2,
+            "score": 14.433073,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_10eb256a73f7710a4365807e",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 13.748668,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_b089cb99fb1baf3a37cf0d40",
+            "fiscal_year": 2025,
+            "rank": 4,
+            "score": 12.223433,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_b4d2b18bf219e1103f043b2b",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 12.051482,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          }
+        ]
+      },
+      {
+        "id": "ret-008",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 4.208749975077808,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.8,
+        "question": "How does Microsoft describe competition in artificial intelligence products and platforms?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7be97088a50cc55520d44f44",
+            "fiscal_year": 2019,
+            "rank": 1,
+            "score": 14.053337,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_f42fbefd5cfb45a6bdf40df1",
+            "fiscal_year": 2021,
+            "rank": 2,
+            "score": 13.7805605,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_ba54d96aa0f6daf06d9f1ba8",
+            "fiscal_year": 2022,
+            "rank": 3,
+            "score": 13.78056,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_bf0677f5654ef0022cc8094d",
+            "fiscal_year": 2020,
+            "rank": 4,
+            "score": 13.705734,
+            "section_name": "Item 1A. Risk Factors",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_c1d20796f0c1f54f94550556",
+            "fiscal_year": 2026,
+            "rank": 5,
+            "score": 13.1729765,
+            "section_name": "Item 7. MD&A",
+            "ticker": "MSFT"
+          }
+        ]
+      },
+      {
+        "id": "ret-009",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 2.6164170121774077,
+        "mrr": 0.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.0,
+        "question": "What market risks does Microsoft report?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_f73144a740df72a0ef319d01",
+            "fiscal_year": 2023,
+            "rank": 1,
+            "score": 7.1230493,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_2c368813c709df8516d9b6bb",
+            "fiscal_year": 2026,
+            "rank": 2,
+            "score": 7.0225344,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_5dfa57789cdc59e8165f1c3c",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 6.4178114,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_2c5012fc9d05ace90f079e88",
+            "fiscal_year": 2026,
+            "rank": 4,
+            "score": 6.3687057,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          },
+          {
+            "chunk_id": "chunk_fe6ec25094448f7ddbcf875e",
+            "fiscal_year": 2024,
+            "rank": 5,
+            "score": 6.2166195,
+            "section_name": "Item 1. Business",
+            "ticker": "MSFT"
+          }
+        ]
+      },
+      {
+        "id": "ret-010",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 3.193916054442525,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "What does Apple say about its business products, services, and markets?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_fcf4d8f47d4a7ada8735ed37",
+            "fiscal_year": 2020,
+            "rank": 1,
+            "score": 6.8379393,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_0345ebb5a4166efb5d3aef40",
+            "fiscal_year": 2021,
+            "rank": 2,
+            "score": 6.8273754,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_115ceb36feed9839b203188b",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 6.772919,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_52466207d7945cf9d3939a44",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 6.733222,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          },
+          {
+            "chunk_id": "chunk_79f05386c20feaab16226ef1",
+            "fiscal_year": 2024,
+            "rank": 5,
+            "score": 6.727348,
+            "section_name": "Item 1. Business",
+            "ticker": "AAPL"
+          }
+        ]
+      },
+      {
+        "id": "ret-011",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 2.395792049355805,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 0.2,
+        "question": "How does Meta discuss business investment and operating expenses?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_0afda9ef58ee0d2408f0d1e1",
+            "fiscal_year": 2024,
+            "rank": 1,
+            "score": 11.130792,
+            "section_name": "Item 7. MD&A",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_6faa6cb381372b360c943c9e",
+            "fiscal_year": 2024,
+            "rank": 2,
+            "score": 11.058701,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_3d04f46fda47b7ca3fa3b26d",
+            "fiscal_year": 2025,
+            "rank": 3,
+            "score": 10.00066,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_01be8040f9f38e72892b4458",
+            "fiscal_year": 2023,
+            "rank": 4,
+            "score": 9.747535,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          },
+          {
+            "chunk_id": "chunk_b4d2b18bf219e1103f043b2b",
+            "fiscal_year": 2022,
+            "rank": 5,
+            "score": 9.320922,
+            "section_name": "Item 1. Business",
+            "ticker": "META"
+          }
+        ]
+      },
+      {
+        "id": "ret-012",
+        "judgment_type": "metadata_bootstrap",
+        "latency_ms": 2.9805420199409127,
+        "mrr": 1.0,
+        "ndcg_at_k": null,
+        "precision_at_k": 1.0,
+        "question": "How does Alphabet discuss financial condition and results of operations?",
+        "recall_at_k": null,
+        "top_results": [
+          {
+            "chunk_id": "chunk_7ab58cfa9745f08ea7c22688",
+            "fiscal_year": 2025,
+            "rank": 1,
+            "score": 9.5795965,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_273e6fa8bc2d20697ec31767",
+            "fiscal_year": 2023,
+            "rank": 2,
+            "score": 9.156406,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_536539eb1c29f0b767bbe7f8",
+            "fiscal_year": 2024,
+            "rank": 3,
+            "score": 9.156406,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_31540ba299550755fcd79a1d",
+            "fiscal_year": 2022,
+            "rank": 4,
+            "score": 9.138154,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          },
+          {
+            "chunk_id": "chunk_c1ab4ea2eaeae3647a0165c1",
+            "fiscal_year": 2021,
+            "rank": 5,
+            "score": 9.086464,
+            "section_name": "Item 7. MD&A",
+            "ticker": "GOOGL"
+          }
+        ]
+      }
+    ]
+  },
+  "judgment_contract": {
+    "explicit_chunk_qrels": "Chunk IDs define the complete relevance set. P@K, MRR@K, NDCG@K, and Recall@K are valid.",
+    "metadata_bootstrap": "Ticker/year/section metadata defines relevance for retrieved results only. P@K and MRR@K are reported; NDCG@K and Recall@K are undefined because the full relevant-document universe is unknown."
+  },
+  "k": 5,
+  "summary": {
+    "dense": {
+      "explicit_qrels_questions": 0,
+      "latency_ms_mean": 18.894,
+      "latency_ms_p50": 9.513,
+      "latency_ms_p95": 65.213,
+      "metadata_bootstrap_questions": 12,
+      "mrr": 0.729,
+      "ndcg_at_k": null,
+      "precision_at_k": 0.583,
+      "questions": 12,
+      "recall_at_k": null
+    },
+    "hybrid": {
+      "explicit_qrels_questions": 0,
+      "latency_ms_mean": 17.204,
+      "latency_ms_p50": 13.685,
+      "latency_ms_p95": 34.962,
+      "metadata_bootstrap_questions": 12,
+      "mrr": 0.686,
+      "ndcg_at_k": null,
+      "precision_at_k": 0.633,
+      "questions": 12,
+      "recall_at_k": null
+    },
+    "sparse": {
+      "explicit_qrels_questions": 0,
+      "latency_ms_mean": 9.782,
+      "latency_ms_p50": 3.218,
+      "latency_ms_p95": 35.278,
+      "metadata_bootstrap_questions": 12,
+      "mrr": 0.792,
+      "ndcg_at_k": null,
+      "precision_at_k": 0.633,
+      "questions": 12,
+      "recall_at_k": null
+    }
+  }
+}

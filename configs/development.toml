@@ -1,0 +1,25 @@
+[dataset]
+tickers = [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "NVDA",
+]
+
+filings_per_company = 8
+
+[sec]
+requests_per_second = 5.0
+timeout_seconds = 30.0
+max_retries = 3
+
+[chunking]
+chunk_size_words = 500
+overlap_words = 75
+
+[execution]
+workers = 1
+partition_count = 1
+partition_index = 0

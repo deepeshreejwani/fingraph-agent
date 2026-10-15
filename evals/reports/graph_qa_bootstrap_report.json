@@ -1,0 +1,291 @@
+{
+  "summary": {
+    "total": 6,
+    "completed": 6,
+    "passed": 6,
+    "deferred": 0,
+    "failed": 0,
+    "completion_rate": 1.0,
+    "correctness_rate": 1.0
+  },
+  "results": [
+    {
+      "id": "companies_list",
+      "status": "completed",
+      "passed": true,
+      "passed_non_empty": true,
+      "passed_values": null,
+      "passed_tickers": true,
+      "attempts": 1,
+      "row_count": 6,
+      "latency_ms": 1635.85,
+      "cypher": "MATCH (c:Company)\nRETURN c.ticker AS ticker,\n       c.name AS name\nLIMIT 25",
+      "parameters": {},
+      "rows": [
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc."
+        },
+        {
+          "ticker": "AMZN",
+          "name": "AMAZON COM INC"
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc."
+        },
+        {
+          "ticker": "MSFT",
+          "name": "MICROSOFT CORP"
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA CORP"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "msft_revenue_2024_2026",
+      "status": "completed",
+      "passed": true,
+      "passed_non_empty": true,
+      "passed_values": true,
+      "passed_tickers": null,
+      "attempts": 1,
+      "row_count": 3,
+      "latency_ms": 1738.233,
+      "cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN [\n    'RevenueFromContractWithCustomerExcludingAssessedTax',\n    'Revenues',\n    'SalesRevenueNet'\n]\n  AND period.period_year >= toInteger($start_year)\n  AND period.period_year <= toInteger($end_year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period,\n     collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+      "parameters": {
+        "ticker": "MSFT",
+        "start_year": "2024",
+        "end_year": "2026"
+      },
+      "rows": [
+        {
+          "ticker": "MSFT",
+          "year": 2024,
+          "metric_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "value": 245122000000.0,
+          "unit": "USD",
+          "fact_id": "fact_88bf78f7ca11d1e799116318",
+          "start_date": "2023-07-01",
+          "end_date": "2024-06-30",
+          "accession_number": "0001193125-26-323660",
+          "filing_date": "2026-07-29"
+        },
+        {
+          "ticker": "MSFT",
+          "year": 2025,
+          "metric_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "value": 281724000000.0,
+          "unit": "USD",
+          "fact_id": "fact_605d5ad1832035b90c7e846d",
+          "start_date": "2024-07-01",
+          "end_date": "2025-06-30",
+          "accession_number": "0001193125-26-323660",
+          "filing_date": "2026-07-29"
+        },
+        {
+          "ticker": "MSFT",
+          "year": 2026,
+          "metric_concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "value": 331839000000.0,
+          "unit": "USD",
+          "fact_id": "fact_f16e028a27b572b40574e656",
+          "start_date": "2025-07-01",
+          "end_date": "2026-06-30",
+          "accession_number": "0001193125-26-323660",
+          "filing_date": "2026-07-29"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "nvda_net_income_2024_2026",
+      "status": "completed",
+      "passed": true,
+      "passed_non_empty": true,
+      "passed_values": true,
+      "passed_tickers": null,
+      "attempts": 1,
+      "row_count": 3,
+      "latency_ms": 12607.073,
+      "cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:REPORTS]->(fact:FinancialFact)\nMATCH (fact)-[:FOR_PERIOD]->(period:FiscalPeriod)\nMATCH (filing:Filing)-[:REPORTED_FACT]->(fact)\nWHERE fact.concept IN ['NetIncomeLoss', 'ProfitLoss']\n  AND period.period_year >= toInteger($start_year)\n  AND period.period_year <= toInteger($end_year)\nWITH company, period, fact, filing\nORDER BY period.period_year ASC, filing.filing_date DESC\nWITH company, period,\n     collect({fact: fact, filing: filing})[0] AS latest\nRETURN company.ticker AS ticker,\n       period.period_year AS year,\n       latest.fact.concept AS metric_concept,\n       latest.fact.value AS value,\n       latest.fact.unit AS unit,\n       latest.fact.fact_id AS fact_id,\n       latest.fact.start_date AS start_date,\n       latest.fact.end_date AS end_date,\n       latest.filing.accession_number AS accession_number,\n       latest.filing.filing_date AS filing_date\nLIMIT 25",
+      "parameters": {
+        "ticker": "NVDA",
+        "start_year": "2024",
+        "end_year": "2026"
+      },
+      "rows": [
+        {
+          "ticker": "NVDA",
+          "year": 2024,
+          "metric_concept": "NetIncomeLoss",
+          "value": 29760000000.0,
+          "unit": "USD",
+          "fact_id": "fact_e36cb8292da93c19b2f318d5",
+          "start_date": "2023-01-30",
+          "end_date": "2024-01-28",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25"
+        },
+        {
+          "ticker": "NVDA",
+          "year": 2025,
+          "metric_concept": "NetIncomeLoss",
+          "value": 72880000000.0,
+          "unit": "USD",
+          "fact_id": "fact_9128690ce414f14974c02e98",
+          "start_date": "2024-01-29",
+          "end_date": "2025-01-26",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25"
+        },
+        {
+          "ticker": "NVDA",
+          "year": 2026,
+          "metric_concept": "NetIncomeLoss",
+          "value": 120067000000.0,
+          "unit": "USD",
+          "fact_id": "fact_8b52ed4d7fae72621ec2c904",
+          "start_date": "2025-01-27",
+          "end_date": "2026-01-25",
+          "accession_number": "0001045810-26-000021",
+          "filing_date": "2026-02-25"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "aapl_exists",
+      "status": "completed",
+      "passed": true,
+      "passed_non_empty": true,
+      "passed_values": null,
+      "passed_tickers": null,
+      "attempts": 1,
+      "row_count": 1,
+      "latency_ms": 25891.11,
+      "cypher": "MATCH (company:Company {ticker: $ticker})\nRETURN company.ticker AS ticker\nLIMIT 25",
+      "parameters": {
+        "ticker": "AAPL"
+      },
+      "rows": [
+        {
+          "ticker": "AAPL"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "meta_filings",
+      "status": "completed",
+      "passed": true,
+      "passed_non_empty": true,
+      "passed_values": null,
+      "passed_tickers": null,
+      "attempts": 1,
+      "row_count": 8,
+      "latency_ms": 23060.66,
+      "cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:FILED]->(filing:Filing)\nWHERE filing.form = $form\nRETURN company.ticker AS ticker,\n       filing.accession_number AS accession_number,\n       filing.filing_date AS filing_date,\n       filing.report_date AS report_date,\n       filing.fiscal_year AS fiscal_year\nLIMIT 25",
+      "parameters": {
+        "ticker": "META",
+        "form": "10-K"
+      },
+      "rows": [
+        {
+          "ticker": "META",
+          "accession_number": "0001628280-26-003942",
+          "filing_date": "2026-01-29",
+          "report_date": "2025-12-31",
+          "fiscal_year": 2025
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-20-000013",
+          "filing_date": "2020-01-30",
+          "report_date": "2019-12-31",
+          "fiscal_year": 2019
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-19-000009",
+          "filing_date": "2019-01-31",
+          "report_date": "2018-12-31",
+          "fiscal_year": 2018
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-24-000012",
+          "filing_date": "2024-02-02",
+          "report_date": "2023-12-31",
+          "fiscal_year": 2023
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-23-000013",
+          "filing_date": "2023-02-02",
+          "report_date": "2022-12-31",
+          "fiscal_year": 2022
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-21-000014",
+          "filing_date": "2021-01-28",
+          "report_date": "2020-12-31",
+          "fiscal_year": 2020
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-22-000018",
+          "filing_date": "2022-02-03",
+          "report_date": "2021-12-31",
+          "fiscal_year": 2021
+        },
+        {
+          "ticker": "META",
+          "accession_number": "0001326801-25-000017",
+          "filing_date": "2025-01-30",
+          "report_date": "2024-12-31",
+          "fiscal_year": 2024
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "googl_sections",
+      "status": "completed",
+      "passed": true,
+      "passed_non_empty": true,
+      "passed_values": null,
+      "passed_tickers": null,
+      "attempts": 2,
+      "row_count": 4,
+      "latency_ms": 47208.063,
+      "cypher": "MATCH (company:Company {ticker: $ticker})\nMATCH (company)-[:FILED]->(filing:Filing)\nMATCH (filing)-[:HAS_SECTION]->(section:Section)\nRETURN DISTINCT section.section_name AS section_name\nORDER BY section_name\nLIMIT 25",
+      "parameters": {
+        "ticker": "GOOGL"
+      },
+      "rows": [
+        {
+          "section_name": "Item 1. Business"
+        },
+        {
+          "section_name": "Item 1A. Risk Factors"
+        },
+        {
+          "section_name": "Item 7. MD&A"
+        },
+        {
+          "section_name": "Item 7A. Market Risk"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

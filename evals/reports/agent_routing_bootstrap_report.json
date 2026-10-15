@@ -1,0 +1,145 @@
+{
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "accuracy": 1.0
+  },
+  "results": [
+    {
+      "id": "msft_revenue",
+      "question": "What was Microsoft's revenue in 2026?",
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "reason": "Question primarily requests structured financial or graph-resident information.",
+      "passed": true,
+      "latency_ms": 0.009
+    },
+    {
+      "id": "nvda_risks",
+      "question": "What risks does NVIDIA describe in its 10-K?",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.006
+    },
+    {
+      "id": "msft_revenue_drivers",
+      "question": "How did Microsoft's revenue change from 2024 to 2026 and explain what management said drove the trend?",
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "reason": "Question combines structured financial information with narrative explanation.",
+      "passed": true,
+      "latency_ms": 0.005
+    },
+    {
+      "id": "meta_filings",
+      "question": "Show Meta's available filings.",
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "reason": "Question primarily requests structured financial or graph-resident information.",
+      "passed": true,
+      "latency_ms": 0.006
+    },
+    {
+      "id": "aapl_competitive_risks",
+      "question": "Describe Apple's competitive risks.",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.005
+    },
+    {
+      "id": "amzn_business",
+      "question": "Describe Amazon's business.",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.005
+    },
+    {
+      "id": "googl_assets",
+      "question": "What were Alphabet's total assets in 2025?",
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "reason": "Question primarily requests structured financial or graph-resident information.",
+      "passed": true,
+      "latency_ms": 0.005
+    },
+    {
+      "id": "nvda_income_drivers",
+      "question": "How did NVIDIA's net income change from 2024 to 2026 and what does management say drove performance?",
+      "expected_route": "hybrid",
+      "actual_route": "hybrid",
+      "reason": "Question requires both graph-resident facts and narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.005
+    },
+    {
+      "id": "msft_ticker",
+      "question": "What is Microsoft's ticker?",
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "reason": "Question primarily requests structured financial or graph-resident information.",
+      "passed": true,
+      "latency_ms": 0.004
+    },
+    {
+      "id": "meta_risk_factors",
+      "question": "Summarize Meta's risk factors.",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.004
+    },
+    {
+      "id": "aapl_cash",
+      "question": "How much cash did Apple report in 2025?",
+      "expected_route": "graph",
+      "actual_route": "graph",
+      "reason": "Question primarily requests structured financial or graph-resident information.",
+      "passed": true,
+      "latency_ms": 0.004
+    },
+    {
+      "id": "googl_strategy",
+      "question": "What strategy does Alphabet discuss in its annual report?",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.005
+    },
+    {
+      "id": "aapl_annual_strategy",
+      "question": "Describe Apple's annual strategy.",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.004
+    },
+    {
+      "id": "nvda_risks_over_years",
+      "question": "What risks has NVIDIA discussed over the years?",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.004
+    },
+    {
+      "id": "amzn_business_value",
+      "question": "What value does Amazon say its business provides customers?",
+      "expected_route": "vector",
+      "actual_route": "vector",
+      "reason": "Question primarily requests qualitative or narrative evidence.",
+      "passed": true,
+      "latency_ms": 0.005
+    }
+  ]
+}
